@@ -27,7 +27,7 @@
                     background-color:#FF4F42;
                     border-radius: 0;
                      .progress-bar{
-                        background-color: #3CC78F;
+                        background-color: #22b3a6d3;
                         position: relative;
                          .progres_count{
                             position: absolute;
@@ -36,7 +36,7 @@
                             height: 100px;
                             @include border-radius(50%);
                             font-size: 35px;
-                            background: #3CC78F;
+                            background: #22b3a6d3;
                             line-height: 100px;
                             @media #{$mobile_device} {
                                 width: 40px;
@@ -118,7 +118,7 @@
                 background-color:#FF4F42;
                 border-radius: 0;
                  .progress-bar{
-                    background-color: #3CC78F;
+                    background-color: #22b3a6d3;
                     position: relative;
                      .progres_count{
                         position: absolute;
@@ -127,7 +127,7 @@
                         height: 32px;
                         @include border-radius(50%);
                         font-size: 12px;
-                        background: #3CC78F;
+                        background: #22b3a6d3;
                         line-height: 32px;
                      }
                  }  

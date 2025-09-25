@@ -34,7 +34,7 @@ transform: translateY(-50%);
     content: '';
     width: 8px;
     height:8px;
-    background: #3CC78F;
+    background: #22b3a6d3;
     position: absolute;
     top: 4px;
     left: 2px;
@@ -57,7 +57,7 @@ transform: translateY(-50%);
         .input_field{
             .input-group {
                 width: 100%;
-                border: 1px solid #3CC78F;
+                border: 1px solid #22b3a6d3;
                 border-radius: 7px;
                 padding: 5px 10px;
                 @include box-shadow(0 3px 6px rgba(0, 0, 0,.16));
@@ -97,7 +97,7 @@ transform: translateY(-50%);
                 @include box-shadow(0 3px 6px rgba(0, 0, 0,.16));
                 padding: 18px 27px;
                 border-radius: 7px;
-                border: 1px solid#3CC78F;
+                border: 1px solid#22b3a6d3;
                 display: block;
                 overflow: hidden;
                 @media #{$mobile_device} {
