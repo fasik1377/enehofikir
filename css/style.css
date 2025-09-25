@@ -6807,3 +6807,18 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Logo Styling */
+.logo-img {
+  max-width: 180px;
+  /* Adjust size */
+  height: auto;
+  background: #ffffff;
+  /* White background */
+  padding: 3px 5px;
+  /* Some spacing inside */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  /* Soft shadow */
+}
