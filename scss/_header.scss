@@ -14,7 +14,7 @@
         padding: 0 10px 10px 10px;
     }
     .main-header-area{
-        background: #22b3a6d3;
+        background: #1c9288d3;
         @include border-radius(10px);
         padding: 25px 35px;
         position: absolute;
@@ -100,7 +100,7 @@
                 }
                 &:hover{
                     background: #fff;
-                    color: #22b3a6d3;
+                    color: #1c9288d3;
                 }
                }
            }
@@ -216,7 +216,7 @@
             -webkit-transition: transform 500ms ease, background 500ms ease;
             box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
             // padding: 10px 150px;
-            background: #22b3a6d3;
+            background: #1c9288d3;
             bottom: auto;
             @media #{$mobile_device} {
                 padding: 10px 10px;
