@@ -224,7 +224,6 @@
         object-fit: cover;
     }
 </style>
-
 <!-- footer_start  -->
 <footer class="footer">
     <!-- Full background for footer -->
@@ -237,7 +236,7 @@
                     <div class="footer_widget">
                         <div class="footer_logo mb-3">
                             <a href="index.html">
-                                <img src="img/logo.png" alt="Enehofikir Logo" style="width:150px; height:auto;">
+                                <img src="img/logo.png" alt="Enehofikir Logo" class="footer-logo">
                             </a>
                         </div>
                         <p>
@@ -344,18 +343,26 @@
         width: 100%;
     }
 
-    /* make background full width */
-    .footer_top.full-width,
-    .copy-right_text.full-width {
+    /* Gradient background for footer */
+    .footer_top.full-width {
         width: 100%;
-        background: #f8f9fa;
-        /* change color if needed */
+        background: linear-gradient(135deg, #1c9288d3, #1c9288);
+        color: #fff;
         padding: 40px 0;
     }
 
     .copy-right_text.full-width {
-        background: #e9ecef;
+        background: #1c9288;
+        color: #fff;
         padding: 15px 0;
+    }
+
+    /* White text everywhere */
+    .footer p,
+    .footer a,
+    .footer span,
+    .footer_title {
+        color: #fff !important;
     }
 
     .footer_title {
@@ -368,7 +375,7 @@
         content: "";
         width: 40px;
         height: 3px;
-        background: #80a301;
+        background: #fff;
         position: absolute;
         bottom: -8px;
         left: 0;
@@ -380,21 +387,21 @@
     }
 
     .links li a:hover {
-        color: #80a301;
+        color: #ffde59;
     }
 
     .social-circle {
         display: inline-block;
         background: #fff;
-        color: #333;
+        color: #1c9288;
         padding: 10px;
         border-radius: 50%;
         transition: all 0.3s;
     }
 
     .social-circle:hover {
-        background: #80a301;
-        color: #fff;
+        background: #ffde59;
+        color: #1c9288;
     }
 
     .impact-item {
@@ -412,6 +419,13 @@
         width: 70px;
         border-radius: 6px;
         margin-right: 10px;
+    }
+
+    /* Logo glow effect */
+    .footer-logo {
+        width: 150px;
+        height: auto;
+        filter: drop-shadow(4px 4px 3px #ffffff);
     }
 </style>
 
