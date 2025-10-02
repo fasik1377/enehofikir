@@ -2569,6 +2569,14 @@ h3 {
   text-transform: capitalize;
 }
 
+h4 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
 @media (max-width: 767px) {
   /* line 19, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
   .bradcam_area h3 {
