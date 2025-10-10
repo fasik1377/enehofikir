@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -128,7 +130,81 @@
     </div>
     <!-- bradcam_area_end  -->
 <!-- about_us_content_start -->
-<div class="about_us_content section_padding bg-light">
+<!-- Long About Content -->
+        <!-- Styles -->
+        <style>
+            .title-highlight {
+                position: relative;
+                display: inline-block;
+                padding-bottom: 8px;
+            }
+        
+            .title-highlight::after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 3px;
+                background: #1c9288d3;
+                margin: 8px auto 0;
+                border-radius: 2px;
+            }
+        
+            .info-box {
+                transition: all 0.3s ease;
+            }
+        
+            .info-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            }
+        
+            .info-box i {
+                display: block;
+            }
+        </style>
+<div class="row mt-5">
+    <div class="col-lg-12">
+        <div class="about_content p-5 shadow-lg rounded bg-gradient" data-aos="fade-up" data-aos-duration="1200">
+        <section class="about-ehdo py-5" style="margin-top: -100px;">
+            <div class="container">
+              
+                <h2 class="text-center fw-bold mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="title-highlight">About EHDO</span>
+                </h2>
+        
+                <div class="row align-items-center">
+                    
+                    <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="300">
+                        <div class="info-box shadow-sm p-4 rounded bg-white h-100">
+                            <i class="fas fa-hands-helping fa-2x mb-3"></i>
+                            <p>
+                                <strong>Founded in 2019 G.C</strong>, EHDO strives to make a meaningful impact in the lives of
+                                vulnerable children, teachers, young people, and women.
+                                <br><br>
+                                Our mission is to transform the lives of marginalized children from disadvantaged communities
+                                by addressing educational, health, and socio-economic challenges through an integrated and
+                                holistic approach.
+                            </p>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="400">
+                        <div class="info-box shadow-sm p-4 rounded bg-white h-100">
+                            <i class="fas fa-school fa-2x mb-3"></i>
+                            <p>
+                                EHDO runs education, livelihood, and healthcare-focused projects across
+                                <strong>13 schools</strong> (pre-primary, primary, and secondary) in Addis Ababa.
+                                <br><br>
+                                Currently, it is implementing <strong>5 projects</strong> across <strong>11 sub-cities</strong>
+                                in the capital, reaching thousands of beneficiaries each year.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<div class="about_us_content section_padding bg-light" style="margin-top: -100px;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -139,75 +215,82 @@
         </div>
 
         <!-- Vision & Mission Cards -->
-        <div class="row mb-5">
+        <div class="row mb-5 text-center">
             <div class="col-md-6 mb-4 wow fadeInUp" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 text-center p-4">
+                <div class="card shadow-custom border-0 h-100 p-4">
                     <div class="card-icon mb-3">
-                        <i class="fa fa-eye fa-3x text-custom"></i>
+                        <i class="fa fa-eye fa-4x text-custom"></i>
                     </div>
                     <h4 class="card-title mb-3">Vision</h4>
-                    <p class="card-text">EHDO envisions a world where humanity is pursued and poverty is alleviated
-                        through the integrated efforts of responsible citizens.</p>
+                    <p>EHDO envisions a world where humanity is pursued and poverty is alleviated through the integrated
+                        efforts of responsible citizens.</p>
                 </div>
             </div>
             <div class="col-md-6 mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                <div class="card shadow-custom border-0 h-100 text-center p-4">
+                <div class="card shadow-custom border-0 h-100 p-4">
                     <div class="card-icon mb-3">
-                        <i class="fa fa-bullseye fa-3x text-custom"></i>
+                        <i class="fa fa-bullseye fa-4x text-custom"></i>
                     </div>
                     <h4 class="card-title mb-3">Mission</h4>
-                    <p class="card-text">Transform the lives of marginalized children from disadvantaged communities,
-                        addressing educational, health, and socio-economic challenges through a holistic development
-                        approach.</p>
+                    <p>Transform the lives of marginalized children from disadvantaged communities through education,
+                        health, and socio-economic empowerment.</p>
                 </div>
             </div>
         </div>
 
         <!-- Core Values -->
-        <div class="row mb-5">
-            <div class="col-12 text-center mb-4">
+        <div class="row mb-5 text-center">
+            <div class="col-12 mb-4">
                 <h3><span>Core Values</span></h3>
             </div>
+
             <div class="col-md-4 mb-4 wow fadeInLeft" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-heart fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-heart fa-4x text-custom mb-3"></i>
                     <h5>Passion & Commitment</h5>
-                    <p>Act with kindness and compassion.</p>
+                    <p>Act with kindness, compassion, and unwavering dedication.</p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4 wow fadeInUp" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-handshake fa-2x text-custom mb-2"></i>
-                    <h5>Respect</h5>
-                    <p>Promote local knowledge and values of communities we engage with.</p>
-                </div>
-            </div>
+<div class="col-md-4 mb-4 wow fadeInUp" data-wow-duration="1s">
+    <div class="card shadow-custom border-0 h-100 p-4 text-center">
+        <div class="card-icon mb-3">
+            <i class="fa-solid fa-handshake fa-4x text-custom"></i>
+        </div>
+        <h5>Respect</h5>
+        <p>Promote local knowledge and respect the values of the communities we serve.</p>
+    </div>
+</div>
+
+
             <div class="col-md-4 mb-4 wow fadeInRight" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-users fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-users fa-4x text-custom mb-3"></i>
                     <h5>Love & Pro-family</h5>
-                    <p>Nurture kids with love and value the role of mothers in building strong families.</p>
+                    <p>Value strong family bonds and nurture children with love and care.</p>
                 </div>
             </div>
+
             <div class="col-md-4 mb-4 wow fadeInLeft" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-lightbulb fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-lightbulb fa-4x text-custom mb-3"></i>
                     <h5>Empowerment</h5>
-                    <p>Empower mothers to ensure children’s success.</p>
+                    <p>Enable mothers and families to achieve independence and success.</p>
                 </div>
             </div>
+
             <div class="col-md-4 mb-4 wow fadeInUp" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-globe fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-globe fa-4x text-custom mb-3"></i>
                     <h5>Inclusivity & Impact</h5>
-                    <p>Welcome diversity and focus on meaningful outcomes.</p>
+                    <p>Celebrate diversity and focus on lasting, meaningful results.</p>
                 </div>
             </div>
+
             <div class="col-md-4 mb-4 wow fadeInRight" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-shield-alt fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-shield-alt fa-4x text-custom mb-3"></i>
                     <h5>Sustainability & Accountability</h5>
-                    <p>Ensure financial, social, and environmental resilience with transparency.</p>
+                    <p>Build transparency and ensure long-term resilience in all actions.</p>
                 </div>
             </div>
         </div>
@@ -216,53 +299,57 @@
         <div class="row mb-5">
             <div class="col-md-6 mb-4 wow fadeInLeft" data-wow-duration="1s">
                 <div class="card shadow-custom border-0 h-100 p-4">
-                    <h4 class="mb-3">Program Implementation Strategies</h4>
+                    <div class="card-icon text-center mb-3">
+                        <i class="fa fa-tasks fa-4x text-custom"></i>
+                    </div>
+                    <h4>Program Implementation Strategies</h4>
                     <ul class="custom-list">
                         <li>Needs Assessment: Identify specific needs and priorities.</li>
-                        <li>Stakeholder Involvement: Engage teachers, parents, students, and community.</li>
-                        <li>Evidence-Based Practices: Use proven methods.</li>
-                        <li>Data-Driven Decision Making: Monitor progress using data.</li>
-                        <li>Sustainability: Plan for long-term impact.</li>
-                        <li>Monitoring & Evaluation: Evaluate effectiveness thoroughly.</li>
+                        <li>Stakeholder Involvement: Engage teachers, parents, and community members.</li>
+                        <li>Evidence-Based Practices: Use proven methods for success.</li>
+                        <li>Data-Driven Decisions: Monitor progress effectively.</li>
+                        <li>Sustainability: Focus on long-term impact.</li>
+                        <li>Monitoring & Evaluation: Ensure accountability and improvement.</li>
                     </ul>
                 </div>
             </div>
+
             <div class="col-md-6 mb-4 wow fadeInRight" data-wow-duration="1s">
                 <div class="card shadow-custom border-0 h-100 p-4">
-                    <h4 class="mb-3">Theory of Change</h4>
-                    <p><strong>If:</strong> EHDO maintains a stable social, economic, and political environment while
-                        strengthening policies and systems.</p>
-                    <p><strong>Then:</strong> Children, youth, women, and persons with disabilities will be empowered
-                        and have access to essential services.</p>
-                    <p>Impact: Better lives, decreased poverty, enhanced resilience, better protection for women and
-                        children, and easier access to healthcare and education.</p>
+                    <div class="card-icon text-center mb-3">
+                        <i class="fa fa-project-diagram fa-4x text-custom"></i>
+                    </div>
+                    <h4>Theory of Change</h4>
+                    <p><strong>If:</strong> EHDO strengthens systems and policies in a stable environment.</p>
+                    <p><strong>Then:</strong> Children, women, and persons with disabilities will be empowered with
+                        access to essential services.</p>
+                    <p><strong>Impact:</strong> Reduced poverty, improved education, and better community resilience.
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Geographic Presence, Governance & Staffing -->
-        <div class="row mb-5">
+        <div class="row mb-5 text-center">
             <div class="col-md-4 mb-4 wow fadeInLeft" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-map-marker-alt fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-map-marker-alt fa-4x text-custom mb-3"></i>
                     <h5>Geographic Presence</h5>
-                    <p>Headquartered in Addis Ababa with 14 schools under key intervention areas. Expansion planned to
-                        other regions.</p>
+                    <p>Headquartered in Addis Ababa with 14 active schools. Expansion planned to additional regions.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 wow fadeInUp" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-user-tie fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-user-tie fa-4x text-custom mb-3"></i>
                     <h5>Governance & Leadership</h5>
-                    <p>23 founding members. General Assembly is the highest authority. Executive Director and Board
-                        Chair lead operations.</p>
+                    <p>23 founding members, guided by a General Assembly and Executive Board for direction.</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4 wow fadeInRight" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 h-100 p-4 text-center">
-                    <i class="fa fa-users fa-2x text-custom mb-2"></i>
+                <div class="card shadow-custom border-0 h-100 p-4">
+                    <i class="fa fa-users-gear fa-4x text-custom mb-3"></i>
                     <h5>Staffing & Volunteers</h5>
-                    <p>7 full-time staff and over 50 volunteers support project implementation.</p>
+                    <p>7 full-time staff and 50+ dedicated volunteers make the mission possible.</p>
                 </div>
             </div>
         </div>
@@ -270,19 +357,19 @@
         <!-- Collaboration -->
         <div class="row">
             <div class="col-12 wow fadeInUp" data-wow-duration="1s">
-                <div class="card shadow-custom border-0 p-4">
-                    <h4 class="mb-3 text-center">Collaboration & Networking</h4>
-                    <p>EHDO collaborates with government offices and NGOs, including AA Education Bureau, Yeka Sub City
-                        administration, GIV Society, Matheous Wondu Cancer Society, SERVE Global, WISE, Link Ethiopia,
-                        Imagine1day, Hope Enterprises, FIDO, TOGETHER Ethiopia, Marriot Hotel, Ethiopian Airlines, Tikur
-                        Ambesa, Paulos Hospital, and Aster Volunteers.</p>
+                <div class="card shadow-custom border-0 p-4 text-center">
+                    <div class="card-icon mb-3">
+                        <i class="fa fa-hand-holding-heart fa-4x text-custom"></i>
+                    </div>
+                    <h4>Collaboration & Networking</h4>
+                    <p>EHDO partners with government agencies, NGOs, and private organizations such as the AA Education
+                        Bureau, GIV Society, WISE, Hope Enterprises, and Aster Volunteers to achieve shared humanitarian
+                        goals.</p>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-<!-- about_us_content_end -->
 
 <!-- Custom CSS -->
 <style>
@@ -291,7 +378,13 @@
     }
 
     .shadow-custom {
-        box-shadow: 0 0.5px 2px #1c9288d3 !important;
+        box-shadow: 0 0.5px 4px #1c9288d3 !important;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .shadow-custom:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(28, 146, 136, 0.4);
     }
 
     .custom-list {
@@ -308,14 +401,22 @@
 
     .custom-list li::before {
         content: "\2713";
-        /* checkmark symbol */
         position: absolute;
         left: 0;
         top: 0;
         color: #1c9288d3;
         font-weight: bold;
     }
-</style><!-- footer_start  -->
+
+    .card-icon i {
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover .card-icon i {
+        transform: scale(1.15);
+    }
+</style>
+<!-- footer_start  -->
 <footer class="footer">
     <!-- Full background for footer -->
     <div class="footer_top full-width">

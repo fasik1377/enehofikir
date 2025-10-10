@@ -142,8 +142,16 @@
                     <img src="img/news/1.jpg" class="card-img-top" alt="School Feeding">
                     <div class="card-body">
                         <h5 class="card-title">School Feeding</h5>
-                        <p class="card-text">Providing breakfast and lunch to vulnerable students, improving health,
-                            focus, and academic performance.</p>
+                        <p class="card-text short-text">
+                            Providing breakfast and lunch to vulnerable students, improving health, focus, and academic
+                            performance.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            This project ensures consistent nutrition for students in need, helping them attend classes
+                            regularly and enhance their learning outcomes. It also supports local farmers and food
+                            suppliers, promoting community-based sustainability.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -154,8 +162,15 @@
                     <img src="img/news/3.jpg" class="card-img-top" alt="Income Generation">
                     <div class="card-body">
                         <h5 class="card-title">Income Generation Activities</h5>
-                        <p class="card-text">Empowering vulnerable mothers with startup capital, skills training, and
-                            self-help groups for sustainability.</p>
+                        <p class="card-text short-text">
+                            Empowering vulnerable mothers with startup capital, skills training, and self-help groups
+                            for sustainability.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            This initiative promotes economic resilience by training mothers in entrepreneurship and
+                            financial literacy, creating sustainable income sources that uplift entire families.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -166,8 +181,14 @@
                     <img src="img/news/4.jpg" class="card-img-top" alt="Socio-economic Support">
                     <div class="card-body">
                         <h5 class="card-title">Socio-economic Support</h5>
-                        <p class="card-text">Supporting outstanding vulnerable students with financial aid and mental
-                            wellness programs.</p>
+                        <p class="card-text short-text">
+                            Supporting outstanding vulnerable students with financial aid and mental wellness programs.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            By addressing both educational and psychological needs, this program helps students overcome
+                            personal barriers, achieve academic success, and contribute positively to their communities.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -178,8 +199,15 @@
                     <img src="img/news/5.jpg" class="card-img-top" alt="Sanitary Pad Support">
                     <div class="card-body">
                         <h5 class="card-title">Sanitary Pad Support</h5>
-                        <p class="card-text">Reducing absenteeism among female students by providing sanitary pads for
-                            better school participation.</p>
+                        <p class="card-text short-text">
+                            Reducing absenteeism among female students by providing sanitary pads for better school
+                            participation.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            The project promotes menstrual hygiene management education, boosting girls’ confidence and
+                            ensuring equal participation in education without interruptions.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -189,9 +217,16 @@
                 <div class="card h-100 shadow-sm project-card wow fadeInUp" data-wow-delay="0.5s">
                     <img src="img/news/6.jpg" class="card-img-top" alt="Emergency Support">
                     <div class="card-body">
-                        <h5 class="card-title">Emergency Support</h5>
-                        <p class="card-text">Providing food, clothing, and essentials during crises for vulnerable
-                            families in Yeka Sub City.</p>
+                        <h5 class="card-title">Humanitarian Support</h5>
+                        <p class="card-text short-text">
+                            Providing food, clothing, and essentials during crises for vulnerable families in Yeka Sub
+                            City.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            In times of emergency, this initiative responds quickly to families in distress, ensuring
+                            their basic needs are met with dignity and compassion.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -202,8 +237,14 @@
                     <img src="img/news/7.jpg" class="card-img-top" alt="CPAR Project">
                     <div class="card-body">
                         <h5 class="card-title">CPAR: ET 302 Victims Project</h5>
-                        <p class="card-text">Empowering disadvantaged high school students with career development and
-                            emotional support.</p>
+                        <p class="card-text short-text">
+                            Empowering disadvantaged high school students with career development and emotional support.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            This partnership with CPAR helps students affected by trauma find direction and healing
+                            through mentorship, therapy, and leadership training.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
@@ -214,14 +255,65 @@
                     <img src="img/news/2.jpg" class="card-img-top" alt="Medical Campaigns">
                     <div class="card-body">
                         <h5 class="card-title">Medical Campaigns</h5>
-                        <p class="card-text">Providing free medical services, including dental, eye, and cancer
-                            screenings, in partnership with health institutions.</p>
+                        <p class="card-text short-text">
+                            Providing free medical services, including dental, eye, and cancer screenings, in
+                            partnership with health institutions.
+                        </p>
+                        <p class="card-text full-text" style="display: none;">
+                            These outreach efforts bring essential healthcare directly to underserved communities,
+                            ensuring early detection and promoting overall well-being.
+                        </p>
+                        <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- READ MORE SCRIPT -->
+<script>
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const card = this.closest('.card-body');
+            const shortText = card.querySelector('.short-text');
+            const fullText = card.querySelector('.full-text');
+
+            if (fullText.style.display === 'none') {
+                fullText.style.display = 'block';
+                shortText.style.display = 'none';
+                this.textContent = 'Read Less';
+            } else {
+                fullText.style.display = 'none';
+                shortText.style.display = 'block';
+                this.textContent = 'Read More';
+            }
+        });
+    });
+</script>
+
+<!-- READ MORE STYLE -->
+<style>
+    .read-more-btn {
+        display: inline-block;
+        color: white;
+        /* White color as requested */
+        background-color: #1c9288d3;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+        background-color: #15786f;
+        text-decoration: none;
+        color: #fff;
+    }
+</style>
+
 <!--================ Projects Area End =================-->
 
 <!-- Extra CSS for hover effect -->
@@ -286,7 +378,7 @@
                             Enehofikir is a non-profit organization founded in 2019 G.C.
                             We transform the lives of vulnerable children, teachers, young people,
                             and women through education, healthcare, livelihood support,
-                            and emergency aid programs.
+                            and humanitarian aid programs.
                         </p>
                         <div class="socail_links mt-3">
                             <ul style="display:flex; gap:12px; list-style:none; padding:0;">
