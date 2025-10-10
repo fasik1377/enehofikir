@@ -30,6 +30,11 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -163,15 +168,31 @@
                             <img src="img/help/1.jpg" alt="Support Education">
                         </div>
                     </div>
-                    <div class="help_content">
+                    <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Support Education</h4>
-                        <p>Helping children and young people access quality education empowers them to break the cycle
+                        <p style="color:white">Helping children and young people access quality education empowers them to break the cycle
                             of poverty and build a brighter future.</p>
                         <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
             </div>
+<style>
+    .read-more-btn {
+        display: inline-block;
+        color: #1c9288d3;
+        /* Custom color */
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 8px;
+        transition: all 0.3s ease;
+    }
 
+    .read-more-btn:hover {
+        color: #15786f;
+        /* Slightly darker hover effect */
+        text-decoration: underline;
+    }
+</style>
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="single_reson h-100">
                     <div class="thum">
@@ -179,9 +200,9 @@
                             <img src="img/help/2.jpg" alt="Health & Wellbeing">
                         </div>
                     </div>
-                    <div class="help_content">
+                    <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Health & Wellbeing</h4>
-                        <p>We believe in creating healthier communities by supporting health programs, awareness
+                        <p style="color:white">We believe in creating healthier communities by supporting health programs, awareness
                             campaigns, and access to basic healthcare.</p>
                         <a href="#" class="read_more">Read More</a>
                     </div>
@@ -192,12 +213,12 @@
                 <div class="single_reson h-100">
                     <div class="thum">
                         <div class="thum_1">
-                            <img src="img/help/3.jpg" alt="Empowering Communities">
+                            <img src="img/help/photo.jpg" alt="Empowering Communities">
                         </div>
                     </div>
-                    <div class="help_content">
+                    <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Empowering Communities</h4>
-                        <p>Through training, volunteering, and social programs, we work hand-in-hand with communities to
+                        <p style="color:white">Through training, volunteering, and social programs, we work hand-in-hand with communities to
                             build resilience and opportunities for all.</p>
                         <a href="#" class="read_more">Read More</a>
                     </div>
@@ -208,18 +229,19 @@
 </div>
 <!-- reson_area_end -->
 <!-- Long About Content -->
-<div class="row mt-5">
+<!--<div class="row mt-5">
     <div class="col-lg-12">
-        <div class="about_content p-5 shadow-lg rounded bg-gradient" data-aos="fade-up" data-aos-duration="1200"><!-- About EHDO Section -->
+        <div class="about_content p-5 shadow-lg rounded bg-gradient" data-aos="fade-up" data-aos-duration="1200">
+           
         <section class="about-ehdo py-5">
             <div class="container">
-                <!-- Title -->
+              
                 <h2 class="text-center fw-bold mb-4" data-aos="zoom-in" data-aos-delay="200">
                     <span class="title-highlight">About EHDO</span>
                 </h2>
         
                 <div class="row align-items-center">
-                    <!-- Left Column -->
+                    
                     <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="300">
                         <div class="info-box shadow-sm p-4 rounded bg-white h-100">
                             <i class="fas fa-hands-helping text-primary fa-2x mb-3"></i>
@@ -234,7 +256,7 @@
                         </div>
                     </div>
         
-                    <!-- Right Column -->
+                    
                     <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="400">
                         <div class="info-box shadow-sm p-4 rounded bg-white h-100">
                             <i class="fas fa-school text-success fa-2x mb-3"></i>
@@ -249,7 +271,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <!-- Styles -->
         <style>
@@ -291,58 +313,117 @@
     achieved significant milestones:
 </p>
 
-<!-- Swiper Slider -->
-<div class="swiper mySwiper mt-4">
+<!-- Swiper Slider --><div class="swiper mySwiper mt-4">
     <div class="swiper-wrapper">
 
         <!-- Slide 1 -->
         <div class="swiper-slide">
             <div class="impact-card shadow-lg p-4 rounded bg-white text-center">
-                <p>Student drop-out and absenteeism decreased while participation increased through the school feeding
-                    program.</p>
+                <p>
+                    Student drop-out and absenteeism decreased while participation increased through the school feeding
+                    program.
+                    <span class="more-text" style="display:none;">
+                        This initiative not only ensures daily nutrition but also boosts learning performance and
+                        attendance across all supported schools.
+                    </span>
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
             </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="swiper-slide">
             <div class="impact-card shadow-lg p-4 rounded bg-white text-center">
-                <p>The school feeding program has supported ~300 students yearly since 2019, while also creating jobs
-                    for mothers.</p>
+                <p>
+                    The school feeding program has supported ~300 students yearly since 2019, while also creating jobs
+                    for mothers.
+                    <span class="more-text" style="display:none;">
+                        By empowering local women as food preparers and coordinators, the project helps strengthen
+                        community bonds and sustainable livelihoods.
+                    </span>
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
             </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="swiper-slide">
             <div class="impact-card shadow-lg p-4 rounded bg-white text-center">
-                <p>Medical campaigns in partnership with GIV Society & hospitals improved the health of 5,083 students
-                    and communities.</p>
+                <p>
+                    Medical campaigns in partnership with GIV Society & hospitals improved the health of 5,083 students
+                    and communities.
+                    <span class="more-text" style="display:none;">
+                        Services included free check-ups, hygiene awareness, vaccinations, and nutritional guidance for
+                        better overall wellbeing.
+                    </span>
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
             </div>
         </div>
 
         <!-- Slide 4 -->
         <div class="swiper-slide">
             <div class="impact-card shadow-lg p-4 rounded bg-white text-center">
-                <p>Livelihood support programs empowered vulnerable women, children, and disabled people with
-                    entrepreneurial and business skills.</p>
+                <p>
+                    Livelihood support programs empowered vulnerable women, children, and disabled people with
+                    entrepreneurial and business skills.
+                    <span class="more-text" style="display:none;">
+                        These initiatives have created sustainable income sources and improved social inclusion in
+                        marginalized communities.
+                    </span>
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
             </div>
         </div>
 
         <!-- Slide 5 -->
         <div class="swiper-slide">
             <div class="impact-card shadow-lg p-4 rounded bg-white text-center">
-                <p>Targeted schools received materials and training to improve capacity, textbooks, and teaching aids.
+                <p>
+                    Targeted schools received materials and training to improve capacity, textbooks, and teaching aids.
+                    <span class="more-text" style="display:none;">
+                        Teachers were trained in modern methods to enhance classroom engagement and digital learning
+                        approaches.
+                    </span>
                 </p>
+                <a href="#" class="read-more-btn">Read More</a>
             </div>
         </div>
 
         <!-- Slide 6 -->
         <div class="swiper-slide">
             <div class="impact-card shadow-lg p-4 rounded bg-white text-center">
-                <p>Emergency support programs (clothing, meal sharing, public centers) sustained communities in Yeka Sub
-                    City.</p>
+                <p>
+                    Emergency support programs (clothing, meal sharing, public centers) sustained communities in Yeka
+                    Sub City.
+                    <span class="more-text" style="display:none;">
+                        These relief activities provided rapid responses during crisis periods and promoted resilience
+                        among vulnerable groups.
+                    </span>
+                </p>
+                <a href="#" class="read-more-btn">Read More</a>
             </div>
         </div>
+
     </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            const moreText = this.previousElementSibling.querySelector('.more-text');
+            if (moreText.style.display === 'none' || moreText.style.display === '') {
+                moreText.style.display = 'inline';
+                this.textContent = 'Read Less';
+            } else {
+                moreText.style.display = 'none';
+                this.textContent = 'Read More';
+            }
+        });
+    });
+</script>
 
     <!-- Swiper Controls -->
     <div class="swiper-pagination"></div>
@@ -473,14 +554,19 @@
     <!-- latest_activites_area_start  -->
 <div class="latest_activites_area">
     <div class="video_bg_1 video_activite d-flex align-items-center justify-content-center">
-        <a class="popup-video" href="https://www.youtube.com/watch?v=MG3jGHnBVQs">
-            <i class="flaticon-ui"></i>
-        </a>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/KNlQ7d5u5-I?autoplay=1&mute=1&loop=1&playlist=KNlQ7d5u5-I"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </div>
+</div>
+
     <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-7">
-                <div class="activites_info">
+                <div class="activites_info" style="margin-top: -100px;">
                     <div class="section_title">
                         <h3><span>Watch Our Latest</span><br>
                             Community Activities</h3>
@@ -503,7 +589,7 @@
 <!-- latest_activites_area_end -->
 
 <!-- popular_causes_area_start  -->
-<div class="popular_causes_area section_padding">
+<div class="popular_causes_area section_padding" style="margin-top: -290px;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
@@ -536,7 +622,7 @@
                     <!-- Livelihood -->
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/2.jpg" alt="">
+                            <img src="img/causes/photo2.jpg" alt="">
                         </div>
                         <div class="causes_content">
                             <h4>Livelihood</h4>
@@ -570,10 +656,10 @@
                     <!-- Emergency Support -->
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/1.png" alt="">
+                            <img src="img/causes/main1.jpg" alt="">
                         </div>
                         <div class="causes_content">
-                            <h4>Emergency Support</h4>
+                            <h4>Humanitarian Support</h4>
                             <div class="cause_text">
                                 <p>
                                     Initiatives include access to basic needs, meal sharing and participation
@@ -587,7 +673,7 @@
                     <!-- Environmental Protection -->
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/2.png" alt="">
+                            <img src="img/causes/photo.jpg" alt="">
                         </div>
                         <div class="causes_content">
                             <h4>Environmental Protection</h4>
@@ -602,7 +688,7 @@
                     <!-- Child Safeguarding -->
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="img/causes/3.png" alt="">
+                            <img src="img/causes/main0.jpg" alt="">
                         </div>
                         <div class="causes_content">
                             <h4>Child Safeguarding</h4>
@@ -657,8 +743,16 @@
         border-radius: 3px;
     }
 </style>
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="section_title text-center mb-5">
+            <h3><span>Program Participants Reached by Type</span></h3>
+            <p class="text-secondary">Impact across core program type</p>
+        </div>
+    </div>
+</div>
 <!-- counter_area_start -->
-<div class="counter_area py-5">
+<div class="counter_area py-5" style="margin-top: -80px;">
     <div class="container">
         <div class="counter_bg overlay">
             <div class="row text-center">
@@ -789,7 +883,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section_title text-center mb-5">
-                    <h3><span>Program Participants Reached</span></h3>
+                    <h3><span>Program Participants Reached by Program Area</span></h3>
                     <p class="text-secondary">Impact across core program areas</p>
                 </div>
             </div>
@@ -1110,7 +1204,7 @@
 </script>
 
 
-    <div data-scroll-index='1' class="make_donation_area section_padding">
+   <!-- <div data-scroll-index='1' class="make_donation_area section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -1169,7 +1263,7 @@
 
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- footer_start  -->
     <footer class="footer">
         <!-- Full background for footer -->
@@ -1179,12 +1273,34 @@
     
                     <!-- About Enehofikir -->
                     <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
-                        <div class="footer_widget">
-                            <div class="footer_logo mb-3">
-                                <a href="index.html">
-                                    <img src="img/logo.png" alt="Enehofikir Logo" class="footer-logo">
-                                </a>
-                            </div>
+                        <div class="footer_widget"><a href="index.html" class="footer-logo-wrapper text-center">
+                            <img src="img/logo.png" alt="Enehofikir Logo" class="footer-logo">
+                            <p class="logo-tagline">Our Children Our Future</p>
+                        </a>
+<style>
+    .footer-logo-wrapper {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-logo {
+  max-width: 160px; /* adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-tagline {
+  color: #1c9288d3; /* same color theme as your site */
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+</style>
                             <p>
                                 Enehofikir is a non-profit organization founded in 2019 G.C.
                                 We transform the lives of vulnerable children, teachers, young people,
@@ -1237,7 +1353,7 @@
                             <ul class="news_links">
                                 <li class="impact-item">
                                     <div class="thumb">
-                                        <a href="project.html"><img src="img/news/1.jpg" alt=""></a>
+                                        <a href="project.html"><img src="img/news/1.jpg" alt="" style="width: 100px; height: 80px;"></a>
                                     </div>
                                     <div class="info">
                                         <a href="project.html">
@@ -1248,7 +1364,7 @@
                                 </li>
                                 <li class="impact-item">
                                     <div class="thumb">
-                                        <a href="project.html"><img src="img/news/2.jpg" alt=""></a>
+                                        <a href="project.html"><img src="img/news/2.jpg" alt="" style="width: 100px; height: 80px;"></a>
                                     </div>
                                     <div class="info">
                                         <a href="project.html">
@@ -1375,6 +1491,31 @@
         }
     </style>
     <!-- link that opens popup -->
+<script>
+    $(document).ready(function () {
+        $(".causes_active").owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            dots: true,
+            nav: true,
+            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+            responsive: {
+                0: { items: 1 },
+                600: { items: 2 },
+                1000: { items: 3 }
+            }
+        });
+    });
+</script>
+
+    <!-- jQuery (Required by Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>

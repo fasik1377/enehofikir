@@ -2533,7 +2533,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .breadcam_bg {
-  background-image: url(../img/banner/bradcam.jpg);
+  background-image: url(../img/banner/main1.jpg);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
@@ -2967,10 +2967,42 @@ h4 {
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
 .video_bg_1 {
-  background-image: url(../img/banner/man.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* full screen height */
+  overflow: hidden;
+}
+
+.video_bg_1 .video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.video_bg_1 iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  /* disables accidental clicks on iframe */
+}
+
+/* Optional overlay content on top of video */
+.video_activite::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* dark overlay for contrast */
+  z-index: 2;
 }
 
 /* line 7, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
