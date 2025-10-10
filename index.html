@@ -161,6 +161,7 @@
 
         <!-- Reason Cards -->
         <div class="row">
+            <!-- Card 1 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="single_reson h-100">
                     <div class="thum">
@@ -170,29 +171,21 @@
                     </div>
                     <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Support Education</h4>
-                        <p style="color:white">Helping children and young people access quality education empowers them to break the cycle
-                            of poverty and build a brighter future.</p>
+                        <p class="text-white short-text">
+                            Helping children and young people access quality education empowers them to break the cycle
+                            of poverty.
+                        </p>
+                        <p class="text-white full-text" style="display:none;">
+                            Education builds a brighter future for communities and ensures sustainable development
+                            through knowledge,
+                            confidence, and opportunities.
+                        </p>
                         <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
             </div>
-<style>
-    .read-more-btn {
-        display: inline-block;
-        color: #1c9288d3;
-        /* Custom color */
-        text-decoration: none;
-        font-weight: 600;
-        margin-top: 8px;
-        transition: all 0.3s ease;
-    }
 
-    .read-more-btn:hover {
-        color: #15786f;
-        /* Slightly darker hover effect */
-        text-decoration: underline;
-    }
-</style>
+            <!-- Card 2 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="single_reson h-100">
                     <div class="thum">
@@ -202,13 +195,21 @@
                     </div>
                     <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Health & Wellbeing</h4>
-                        <p style="color:white">We believe in creating healthier communities by supporting health programs, awareness
-                            campaigns, and access to basic healthcare.</p>
+                        <p class="text-white short-text">
+                            We create healthier communities through health programs, awareness campaigns, and access to
+                            healthcare.
+                        </p>
+                        <p class="text-white full-text" style="display:none;">
+                            Our efforts include medical checkups, nutrition training, and partnerships with hospitals to
+                            provide lasting
+                            health solutions.
+                        </p>
                         <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Card 3 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="single_reson h-100">
                     <div class="thum">
@@ -218,8 +219,14 @@
                     </div>
                     <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Empowering Communities</h4>
-                        <p style="color:white">Through training, volunteering, and social programs, we work hand-in-hand with communities to
-                            build resilience and opportunities for all.</p>
+                        <p class="text-white short-text">
+                            We work hand-in-hand with communities to build resilience and opportunities for all.
+                        </p>
+                        <p class="text-white full-text" style="display:none;">
+                            By fostering local leadership, providing training, and supporting volunteers, we ensure
+                            long-term social and
+                            economic empowerment.
+                        </p>
                         <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
@@ -227,6 +234,50 @@
         </div>
     </div>
 </div>
+
+<!-- ✅ CSS -->
+<style>
+    .read_more {
+        display: inline-block;
+        color: white !important;
+        text-decoration: underline;
+        font-weight: 600;
+        margin-top: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .read_more:hover {
+        color: #e6f8f6 !important;
+    }
+
+    .help_content {
+        padding: 20px;
+        border-radius: 8px;
+    }
+</style>
+
+<!-- ✅ JavaScript -->
+<script>
+    document.querySelectorAll(".read_more").forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            const card = this.closest(".help_content");
+            const shortText = card.querySelector(".short-text");
+            const fullText = card.querySelector(".full-text");
+
+            if (fullText.style.display === "none") {
+                fullText.style.display = "block";
+                shortText.style.display = "none";
+                this.textContent = "Read Less";
+            } else {
+                fullText.style.display = "none";
+                shortText.style.display = "block";
+                this.textContent = "Read More";
+            }
+        });
+    });
+</script>
+
 <!-- reson_area_end -->
 <!-- Long About Content -->
 <!--<div class="row mt-5">
@@ -327,7 +378,7 @@
                         attendance across all supported schools.
                     </span>
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" class="read-more-btn" style="color:#1c9288d3">Read More</a>
             </div>
         </div>
 
@@ -342,7 +393,7 @@
                         community bonds and sustainable livelihoods.
                     </span>
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" class="read-more-btn" style="color:#1c9288d3">Read More</a>
             </div>
         </div>
 
@@ -357,7 +408,7 @@
                         better overall wellbeing.
                     </span>
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" class="read-more-btn" style="color:#1c9288d3">Read More</a>
             </div>
         </div>
 
@@ -372,7 +423,7 @@
                         marginalized communities.
                     </span>
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" class="read-more-btn" style="color:#1c9288d3">Read More</a>
             </div>
         </div>
 
@@ -386,7 +437,7 @@
                         approaches.
                     </span>
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" class="read-more-btn" style="color:#1c9288d3">Read More</a>
             </div>
         </div>
 
@@ -401,7 +452,7 @@
                         among vulnerable groups.
                     </span>
                 </p>
-                <a href="#" class="read-more-btn">Read More</a>
+                <a href="#" class="read-more-btn" style="color:#1c9288d3">Read More</a>
             </div>
         </div>
 
@@ -1073,6 +1124,46 @@
     </div>
 </div>-->
 <!-- news__area_end  --><!-- current_partners_area_start -->
+<style>
+    .single_partner {
+        box-shadow: 0 4px 10px #1c9288d3;
+        /* Custom shadow color */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 257px;
+        /* Fixed width */
+        height: 180px;
+        /* Fixed height */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .single_partner img {
+        max-height: 80px;
+        object-fit: contain;
+    }
+
+    .single_partner h6 {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .single_partner:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px #1c9288d3;
+        /* Stronger shadow on hover */
+    }
+
+    /* Optional: keeps cards aligned nicely in non-carousel view */
+    .partners_slider .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
 <div class="current_partners_area section_padding py-5" style="background-color: #f8f9fa;">
     <div class="container">
         <!-- Section Title -->
@@ -1086,89 +1177,82 @@
         <!-- Partners Slider -->
         <div class="partners_slider owl-carousel">
             <!-- Partner 1 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/acso.jpeg" alt="ACSO" class="img-fluid mb-3" style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/acso.jpeg" alt="ACSO" class="img-fluid mb-3">
                 <h6>ACSO</h6>
             </div>
 
             <!-- Partner 2 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
+            <div class="single_partner p-4 rounded bg-white text-center">
                 <img src="img/partners/education_bureau.jpeg" alt="Addis Ababa City Education Bureau"
-                    class="img-fluid mb-3" style="max-height: 80px;">
+                    class="img-fluid mb-3">
                 <h6>Addis Ababa City Education Bureau</h6>
             </div>
 
             <!-- Partner 3 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
+            <div class="single_partner p-4 rounded bg-white text-center">
                 <img src="img/partners/yeka.jpeg" alt="Yeka Sub City Administration & Education Office"
-                    class="img-fluid mb-3" style="max-height: 80px;">
+                    class="img-fluid mb-3">
                 <h6>Yeka Sub City Administration & Education Office</h6>
             </div>
 
             <!-- Partner 4 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/schools.jpeg" alt="13 Primary and Secondary Schools" class="img-fluid mb-3"
-                    style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/schools.jpeg" alt="13 Primary and Secondary Schools" class="img-fluid mb-3">
                 <h6>13 Primary & Secondary Schools</h6>
             </div>
 
             <!-- Partner 5 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/parent.jpeg" alt="Students and Parents" class="img-fluid mb-3"
-                    style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/parent.jpeg" alt="Students and Parents" class="img-fluid mb-3">
                 <h6>Students & Parents</h6>
             </div>
 
             <!-- Partner 6 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/ptsas.png" alt="PTSAs" class="img-fluid mb-3" style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/ptsas.png" alt="PTSAs" class="img-fluid mb-3">
                 <h6>PTSAs</h6>
             </div>
 
             <!-- Partner 7 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/giv.jpeg" alt="GIV Society" class="img-fluid mb-3"
-                    style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/giv.jpeg" alt="GIV Society" class="img-fluid mb-3">
                 <h6>GIV Society</h6>
             </div>
 
             <!-- Partner 8 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/cpar.png" alt="CPAR" class="img-fluid mb-3" style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/cpar.png" alt="CPAR" class="img-fluid mb-3">
                 <h6>CPAR</h6>
             </div>
 
             <!-- Partner 9 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/et_foundation.jpeg" alt="ET Foundation" class="img-fluid mb-3"
-                    style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/et_foundation.jpeg" alt="ET Foundation" class="img-fluid mb-3">
                 <h6>ET Foundation</h6>
             </div>
 
             <!-- Partner 10 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/wondim.jpeg" alt="Wondim Kalid Foundation" class="img-fluid mb-3"
-                    style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/wondim.jpeg" alt="Wondim Kalid Foundation" class="img-fluid mb-3">
                 <h6>Wondim Kalid Foundation</h6>
             </div>
 
             <!-- Partner 11 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/wise.png" alt="WISE" class="img-fluid mb-3" style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/wise.png" alt="WISE" class="img-fluid mb-3">
                 <h6>WISE</h6>
             </div>
 
             <!-- Partner 12 -->
-            <div class="single_partner shadow-sm p-4 rounded bg-white text-center">
-                <img src="img/partners/sara.jpeg" alt="Sara Center" class="img-fluid mb-3"
-                    style="max-height: 80px;">
+            <div class="single_partner p-4 rounded bg-white text-center">
+                <img src="img/partners/sara.jpeg" alt="Sara Center" class="img-fluid mb-3">
                 <h6>Sara Center</h6>
             </div>
         </div>
     </div>
 </div>
 <!-- current_partners_area_end -->
-
 
 <!-- jQuery (must load first) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
