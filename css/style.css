@@ -2556,8 +2556,7 @@ h3 {
 
 /* line 15, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .bradcam_area.overlay::before {
-  background: #1c9288d3;
-  opacity: .8;
+  opacity: .1;
 }
 
 /* line 19, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
