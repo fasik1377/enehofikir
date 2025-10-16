@@ -14,6 +14,10 @@
 
     <!-- CSS here -->
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-papj6tYtWlWxXHZiP7qj+4mFtbRkA4M1aYcHX4J4V1n6Oj8jEkm4Tv3sW4dX1a2OXo43IrLtw2RxpWVpL9S0bg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -260,16 +264,11 @@
                     </div>
                     <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Support Education</h4>
-                        <p class="text-white short-text">
+                        <p class="text-white short-text" style="text-align: justify; font-size: small;">
                             Helping children and young people access quality education empowers them to break the cycle
-                            of poverty.
+                            of poverty.Education builds a brighter future for communities and ensures sustainable development
+                            through knowledge, confidence, and opportunities.
                         </p>
-                        <p class="text-white full-text" style="display:none;">
-                            Education builds a brighter future for communities and ensures sustainable development
-                            through knowledge,
-                            confidence, and opportunities.
-                        </p>
-                        <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -284,16 +283,11 @@
                     </div>
                     <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Health & Wellbeing</h4>
-                        <p class="text-white short-text">
+                        <p class="text-white short-text" style="text-align: justify; font-size: small;">
                             We create healthier communities through health programs, awareness campaigns, and access to
-                            healthcare.
+                            healthcare.Our efforts include medical checkups, nutrition training, and partnerships with hospitals to
+                            provide lasting health solutions.
                         </p>
-                        <p class="text-white full-text" style="display:none;">
-                            Our efforts include medical checkups, nutrition training, and partnerships with hospitals to
-                            provide lasting
-                            health solutions.
-                        </p>
-                        <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -308,15 +302,12 @@
                     </div>
                     <div class="help_content" style="background: rgba(4, 159, 159, 0.653);">
                         <h4>Empowering Communities</h4>
-                        <p class="text-white short-text">
+                        <p class="text-white short-text" style="text-align: justify;font-size: small;">
                             We work hand-in-hand with communities to build resilience and opportunities for all.
-                        </p>
-                        <p class="text-white full-text" style="display:none;">
                             By fostering local leadership, providing training, and supporting volunteers, we ensure
                             long-term social and
                             economic empowerment.
                         </p>
-                        <a href="#" class="read_more">Read More</a>
                     </div>
                 </div>
             </div>
@@ -711,11 +702,11 @@
                         <h3><span>Watch Our Latest</span><br>
                             Community Activities</h3>
                     </div>
-                    <p class="para_1">
+                    <p class="para_1" style="text-align: justify;">
                         At Enehofikir, we actively engage in programs that transform lives. Watch our latest initiatives
                         focused on education, healthcare, livelihood, and humanitarian support.
                     </p>
-                    <p class="para_2">
+                    <p class="para_2" style="text-align: justify;">
                         From school feeding programs to health campaigns and community empowerment activities, our team
                         works hand-in-hand with local communities to bring meaningful change. Explore how we make a
                         difference daily.
@@ -726,9 +717,7 @@
         </div>
     </div>
 </div>
-<!-- latest_activites_area_end -->
-
-<!-- popular_causes_area_start  -->
+<!-- latest_activites_area_end --><!-- popular_causes_area_start -->
 <div class="popular_causes_area section_padding" style="margin-top: -290px;">
     <div class="container">
         <div class="row justify-content-center">
@@ -738,146 +727,203 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-lg-12">
-                <div class="causes_active owl-carousel">
-<!-- Education -->
-<div class="single_cause">
-    <div class="thumb">
-        <img src="img/causes/1.jpg" alt="">
-    </div>
-    <div class="causes_content">
-        <h4 style="color: black; font-weight: 600; font-size: 22px; margin-top: 15px;">
-            Education
-        </h4>
-        <div class="cause_text">
-            <p style="color: #333; font-size: 16px; line-height: 1.6;">
-                Key interventions include school feeding, school infrastructure development,
-                teachers and student’s capacity building, girls’ education, special needs, material
-                support and Education in Humanitarian.
-            </p>
-        </div>
-    </div>
-</div>
 
+                <!-- NEW: wrapper with arrows + scroller -->
+                <div class="causes-wrapper">
+                    <button class="causes-nav prev" aria-label="Previous">‹</button>
 
-                    <!-- Livelihood -->
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/training.jpg" style="height: 470px;" alt="">
-                        </div>
-                        <div class="causes_content">
-                        <h4 style="color: black; font-weight: 600; font-size: 22px; margin-top: 15px;">
-                            Livelihood
-                        </h4>
-                            <div class="cause_text">
-                                <p>
-                                    Initiatives include training programs, microcredit schemes, access to MFIs,
-                                    entrepreneurship development and saving.
-                                </p>
-                                <p><strong>2,422 Participants</strong></p>
+                    <!-- scroller: replace original .causes_active content inside this -->
+                    <div class="causes_scroller" id="causesScroller" role="region" aria-label="Core Program Areas"
+                        tabindex="0">
+                        <!-- Education -->
+                        <div class="single_cause">
+                            <div class="thumb"><img src="img/causes/1.jpg" alt="Education"></div>
+                            <div class="causes_content">
+                                <h4>Education</h4>
+                                <div class="cause_text">
+                                    <p>Key interventions include school feeding, school infrastructure development,
+                                        teachers and student’s capacity building, girls’ education, special needs,
+                                        material support, and Education in Humanitarian.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Healthcare -->
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/3.jpg" alt="">
-                        </div>
-                        <div class="causes_content">
-                            <h4 style="color: black; font-weight: 600; font-size: 22px; margin-top: 15px;">
-                                Healthcare
-                            </h4>
-                            <div class="cause_text">
-                                <p>
-                                    Initiatives include health education campaigns, mobile health clinics,
-                                    and access to dignity kits.
-                                </p>
-                                <p><strong>5,083 Participants</strong></p>
+                        <!-- Livelihood -->
+                        <div class="single_cause">
+                            <div class="thumb"><img src="img/causes/training.jpg" alt="Livelihood"></div>
+                            <div class="causes_content">
+                                <h4>Livelihood</h4>
+                                <div class="cause_text">
+                                    <p>Initiatives include training programs, microcredit schemes, access to MFIs,
+                                        entrepreneurship development, and saving.</p>
+                                    <p><strong>2,422 Participants</strong></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Emergency Support -->
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/main1.jpg" alt="">
-                        </div>
-                        <div class="causes_content">
-                            <h4>Humanitarian Support</h4>
-                            <div class="cause_text">
-                                <p>
-                                    Initiatives include access to basic needs, meal sharing and participation
-                                    in other government initiatives.
-                                </p>
-                                <p><strong>400 Participants</strong></p>
+                        <!-- Healthcare -->
+                        <div class="single_cause">
+                            <div class="thumb"><img src="img/causes/3.jpg" alt="Healthcare"></div>
+                            <div class="causes_content">
+                                <h4>Healthcare</h4>
+                                <div class="cause_text">
+                                    <p>Initiatives include health education campaigns, mobile health clinics, and access
+                                        to dignity kits.</p>
+                                    <p><strong>5,083 Participants</strong></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Environmental Protection -->
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/photo.jpg" alt="">
-                        </div>
-                        <div class="causes_content">
-                            <h4>Environmental Protection</h4>
-                            <div class="cause_text">
-                                <p>
-                                    School-based reforestation projects and green legacy initiatives.
-                                </p>
+                        <!-- Humanitarian Support -->
+                        <div class="single_cause">
+                            <div class="thumb"><img src="img/causes/main1.jpg" alt="Humanitarian Support"></div>
+                            <div class="causes_content">
+                                <h4>Humanitarian Support</h4>
+                                <div class="cause_text">
+                                    <p>Initiatives include access to basic needs, meal sharing, and participation in
+                                        other government initiatives.</p>
+                                    <p><strong>400 Participants</strong></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Child Safeguarding -->
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/main0.jpg" alt="">
-                        </div>
-                        <div class="causes_content">
-                            <h4>Child Safeguarding</h4>
-                            <div class="cause_text">
-                                <p>
-                                    Formulating safeguarding policies, conducting risk assessment,
-                                    and ensuring every child is safe across our programs.
-                                </p>
+                        <!-- Environmental Protection -->
+                        <div class="single_cause">
+                            <div class="thumb"><img src="img/causes/photo.jpg" alt="Environmental Protection"></div>
+                            <div class="causes_content">
+                                <h4>Environmental Protection</h4>
+                                <div class="cause_text">
+                                    <p>School-based reforestation projects and green legacy initiatives.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Gender Equality & Social Inclusion -->
-                    <div class="single_cause">
-                        <div class="thumb">
-                            <img src="img/causes/1.png" alt="">
-                        </div>
-                        <div class="causes_content">
-                            <h4>Gender Equality & Social Inclusion</h4>
-                            <div class="cause_text">
-                                <p>
-                                    Promoting gender equality and actively involving people with disabilities
-                                    and other vulnerable groups into our programs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    </div><!-- .causes_scroller -->
 
-                </div> <!-- owl-carousel -->
+                    <button class="causes-nav next" aria-label="Next">›</button>
+                </div><!-- .causes-wrapper -->
+
             </div>
         </div>
     </div>
 </div>
-<!-- popular_causes_area_end  -->
-
-<!-- Custom Style for Long Text -->
+<!-- popular_causes_area_end -->
 <style>
+    /* Wrapper and nav */
+    .causes-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 10px 0 30px;
+    }
+
+    /* Prev / Next buttons */
+    .causes-nav {
+        background: rgba(0, 0, 0, 0.55);
+        color: #fff;
+        border: none;
+        width: 40px;
+        height: 48px;
+        border-radius: 6px;
+        font-size: 26px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .causes-nav:active {
+        transform: scale(.98);
+    }
+
+    @media (max-width: 576px) {
+        .causes-nav {
+            display: none;
+        }
+
+        /* hide arrows on phones */
+    }
+
+    /* Scroller */
+    .causes_scroller {
+        display: flex;
+        gap: 22px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding: 12px 6px;
+        scroll-snap-type: x mandatory;
+        flex: 1 1 auto;
+        background: transparent;
+        outline: none;
+    }
+
+    /* Card */
+    .single_cause {
+        flex: 0 0 320px;
+        box-sizing: border-box;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        scroll-snap-align: center;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        transition: transform .2s ease;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        /* ✅ Equal height for all cards */
+    }
+
+    .single_cause:hover {
+        transform: translateY(-6px);
+    }
+
+    /* Thumbnail */
+    .single_cause .thumb {
+        width: 100%;
+        height: 250px;
+        /* ✅ fixed image height for uniform look */
+        overflow: hidden;
+        background: #f5f5f5;
+        flex-shrink: 0;
+    }
+
+    .single_cause .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Content */
+    .causes_content {
+        flex-grow: 1;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .causes_content h4 {
+        font-size: 20px;
+        margin: 6px 0 10px;
+        font-weight: 600;
+        color: #111;
+    }
+
+    /* Scrollable long text */
     .cause_text {
-        max-height: 120px;
-        /* limit visible height */
+        max-height: 110px;
         overflow-y: auto;
-        /* scroll if content is too long */
-        padding-right: 5px;
+        padding-right: 6px;
+        color: #333;
+        font-size: 16px;
+        line-height: 1.55;
     }
 
     .cause_text::-webkit-scrollbar {
@@ -888,71 +934,200 @@
         background: #27c4b6d3;
         border-radius: 3px;
     }
+
+    /* Horizontal scrollbar styling */
+    .causes_scroller::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .causes_scroller::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.18);
+        border-radius: 8px;
+    }
+
+    .causes_scroller {
+        scrollbar-width: thin;
+        scrollbar-color: rgba(0, 0, 0, 0.18) transparent;
+    }
+
+    /* Responsive widths */
+    @media (max-width: 992px) {
+        .single_cause {
+            flex: 0 0 280px;
+            height: 460px;
+        }
+
+        .single_cause .thumb {
+            height: 220px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .single_cause {
+            flex: 0 0 85%;
+            height: 430px;
+        }
+
+        .single_cause .thumb {
+            height: 180px;
+        }
+    }
 </style>
+
+<script>
+    (function () {
+        const scroller = document.getElementById('causesScroller');
+        if (!scroller) return;
+
+        // --- If Owl Carousel is present and initialized, try to destroy it safely ---
+        try {
+            if (window.jQuery && jQuery.fn && jQuery.fn.owlCarousel) {
+                const $el = jQuery('.causes_active');
+                // if owl is initialized, this will remove it safely
+                if ($el && $el.data && $el.data('owl.carousel')) {
+                    $el.trigger('destroy.owl.carousel');
+                    $el.removeClass('owl-loaded owl-carousel');
+                }
+            } else {
+                // remove owl classes from DOM elements if they remain
+                document.querySelectorAll('.causes_active, .owl-stage, .owl-item').forEach(el => {
+                    el.classList.remove('owl-stage', 'owl-item', 'owl-loaded', 'owl-carousel');
+                });
+            }
+        } catch (err) {
+            // don't break the page if something goes wrong
+            console.warn('Owl destroy skipped:', err);
+        }
+
+        // --- Wheel to horizontal scroll ---
+        scroller.addEventListener('wheel', function (e) {
+            // Prevent vertical page scroll when over scroller
+            if (Math.abs(e.deltaY) > 0) {
+                e.preventDefault();
+                scroller.scrollLeft += e.deltaY + e.deltaX;
+            }
+        }, { passive: false });
+
+        // --- Drag-to-scroll (desktop) ---
+        let isDown = false, startX, scrollLeft;
+        scroller.addEventListener('mousedown', (e) => {
+            isDown = true;
+            scroller.classList.add('dragging');
+            startX = e.pageX - scroller.offsetLeft;
+            scrollLeft = scroller.scrollLeft;
+        });
+        window.addEventListener('mouseup', () => {
+            isDown = false;
+            scroller.classList.remove('dragging');
+        });
+        scroller.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scroller.offsetLeft;
+            const walk = (x - startX) * 1; // sensitivity
+            scroller.scrollLeft = scrollLeft - walk;
+        });
+
+        // --- Touch: slightly increase swipe responsiveness ---
+        let touchStartX = 0, touchStartScroll = 0;
+        scroller.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartScroll = scroller.scrollLeft;
+        }, { passive: true });
+        scroller.addEventListener('touchmove', (e) => {
+            const x = e.touches[0].clientX;
+            const dx = x - touchStartX;
+            scroller.scrollLeft = touchStartScroll - dx;
+        }, { passive: true });
+
+        // --- Prev / Next buttons ---
+        const btnPrev = document.querySelector('.causes-nav.prev');
+        const btnNext = document.querySelector('.causes-nav.next');
+        const updateStep = () => {
+            const card = scroller.querySelector('.single_cause');
+            const gap = parseFloat(getComputedStyle(scroller).gap) || 22;
+            return Math.round((card ? card.getBoundingClientRect().width : 320) + gap);
+        };
+        btnPrev && btnPrev.addEventListener('click', () => scroller.scrollBy({ left: -updateStep(), behavior: 'smooth' }));
+        btnNext && btnNext.addEventListener('click', () => scroller.scrollBy({ left: updateStep(), behavior: 'smooth' }));
+
+        // --- Keyboard nav ---
+        scroller.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') { e.preventDefault(); scroller.scrollBy({ left: -updateStep(), behavior: 'smooth' }); }
+            if (e.key === 'ArrowRight') { e.preventDefault(); scroller.scrollBy({ left: updateStep(), behavior: 'smooth' }); }
+        });
+
+        // --- Accessibility: focusable and announce total items (optional) ---
+        try {
+            const items = scroller.querySelectorAll('.single_cause').length;
+            scroller.setAttribute('aria-roledescription', items + ' items — use arrow keys or swipe to navigate');
+        } catch (e) { /* ignore */ }
+
+    })();
+</script>
+
 <div class="row justify-content-center">
     <div class="col-lg-8">
         <div class="section_title text-center mb-5">
             <h3><span>Program Participants Reached by Type</span></h3>
-            <p class="text-secondary">Impact across core program type</p>
         </div>
     </div>
 </div><!-- counter_area_start -->
-<div class="counter_area py-5" style="margin-top: -80px;">
-    <div class="container">
-        <div class="counter_bg overlay" style="background-color: rgba(104, 176, 16, 0.6); border-radius: 10px;">
-            <div class="row text-center">
-
+<div class=" py-5" style="margin-top: -80px;">
+    <div class="container" style="background-color: rgba(111, 190, 14, 0.6);">
+        <div class="overlay" style="background-color: rgba(111, 190, 14, 0.6); border-radius: 10px;">
+            <div class="row text-center" style="background-color: rgba(132, 175, 14, 0.975);">
                 <!-- Women Benefited -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="single_counter shadow-sm p-4 rounded">
                         <div class="icon mb-2">
                             <i class="fas fa-female fa-2x"></i>
                         </div>
-                        <h3 class="counter" data-target="4322">0</h3>
+                        <h3 class="" data-target="4322">4,322</h3>
                         <p>Women Benefited</p>
                     </div>
                 </div>
 
                 <!-- Children Benefited -->
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" style="margin-left: -65px;">
                     <div class="single_counter shadow-sm p-4 rounded">
                         <div class="icon mb-2">
                             <i class="fas fa-child fa-2x"></i>
                         </div>
-                        <h3 class="counter" data-target="27536">0</h3>
+                        <h3  data-target="27536">27,536</h3>
                         <p>Children Benefited</p>
                     </div>
                 </div>
 
                 <!-- Teachers Reached -->
-                <div class="col-lg-2 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4" style="margin-left: -70px;">
                     <div class="single_counter shadow-sm p-4 rounded">
                         <div class="icon mb-2">
                             <i class="fas fa-chalkboard-teacher fa-2x"></i>
                         </div>
-                        <h3 class="counter" data-target="543">0</h3>
+                        <h3 data-target="543">543</h3>
                         <p>Teachers Reached</p>
                     </div>
                 </div>
 
                 <!-- Adult Men Reached -->
-                <div class="col-lg-2 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4" style="margin-left: 20px;">
                     <div class="single_counter shadow-sm p-4 rounded">
                         <div class="icon mb-2">
                             <i class="fas fa-male fa-2x"></i>
                         </div>
-                        <h3 class="counter" data-target="1500">0</h3>
+                        <h3 data-target="1500">1500</h3>
                         <p>Adult Men Reached</p>
                     </div>
                 </div>
 
                 <!-- Schools Supported -->
-                <div class="col-lg-2 col-md-6 mb-4">
+                <div class="col-lg-2 col-md-6 mb-4" style="margin-left: 25px;">
                     <div class="single_counter shadow-sm p-4 rounded">
                         <div class="icon mb-2">
                             <i class="fas fa-school fa-2x"></i>
                         </div>
-                        <h3 class="counter" data-target="14">0</h3>
+                        <h3 data-target="14">14</h3>
                         <p>Schools Supported</p>
                     </div>
                 </div>
@@ -995,6 +1170,11 @@
 <style>
     .single_counter {
         background: rgba(255, 255, 255, 0.1);
+        margin-top: 50px;
+        padding: 0px;
+        width: 200px;
+        height: 240px;
+        border-radius: 40px;
         /* Transparent card */
         color: #fff;
         /* White text */
@@ -1007,7 +1187,7 @@
     }
 
     .single_counter h3 {
-        font-size: 2rem;
+        font-size: 2.1rem;
         font-weight: bold;
         color: #fff;
     }
