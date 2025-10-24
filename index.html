@@ -682,25 +682,33 @@
 </div>
 <!-- reson_area_end  -->
     <!-- latest_activites_area_start  -->
-<div class="latest_activites_area" style="margin-top: -300px;"><div class="video_bg_1 video_activite d-flex align-items-center justify-content-center" style="flex-direction: column; text-align: center;">
-  <div class="video-wrapper" style="position: relative; width: 100%; max-width: 700px; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
-    <iframe
-      src="https://www.youtube.com/embed/KNlQ7d5u5-I?autoplay=1&mute=1&loop=1&playlist=KNlQ7d5u5-I"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      style="width: 100%; height: 380px; border: 0;">
-    </iframe>
+<div class="latest_activites_area" style="margin-top: -300px;">
+<div class="video_bg_1 video_activite d-flex align-items-center justify-content-center" 
+     style="flex-direction: column; text-align: center; padding: 20px; width: 100%;">
+
+  <!-- Responsive Video Wrapper -->
+  <div class="video-wrapper" 
+       style="position: relative; width: 100%; max-width: 700px; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.1); margin: 0 auto; display: block;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe
+        src="https://www.youtube.com/embed/KNlQ7d5u5-I?mute=1&loop=1&playlist=KNlQ7d5u5-I"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; border: 0;">
+      </iframe>
+    </div>
   </div>
 
-  <!-- Button to open YouTube video -->
-  <div style="margin-top: 20px;">
+  <!-- Button -->
+  <div style="margin-top: 20px; text-align: center; width: 100%;">
     <a href="https://www.youtube.com/watch?v=KNlQ7d5u5-I" target="_blank" 
-       style="background-color: #1c9288; color: white; height:100px; padding-bottom: 130px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease;">
+       style="background-color: #1c9288; color: white; padding: 12px 25px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; font-size: 1rem;">
       ▶ Watch on YouTube
     </a>
   </div>
+
 </div>
 
     <div class="container">
@@ -726,97 +734,235 @@
         </div>
     </div>
 </div>
-<!-- latest_activites_area_end --><!-- popular_causes_area_start -->
-<div class="popular_causes_area section_padding" style="margin-top: -290px;">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="section_title text-center mb-55">
-                    <h3><span>Core Program Areas</span></h3>
-                </div>
-            </div>
+<!-- popular_causes_area_start -->
+<div class="popular_causes_area section_padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="section_title text-center mb-55">
+          <h3><span>Core Program Areas</span></h3>
         </div>
-
-        <div class="row">
-            <div class="col-lg-12">
-
-                <!-- NEW: wrapper with arrows + scroller -->
-                <div class="causes-wrapper">
-                    <button class="causes-nav prev" aria-label="Previous">‹</button>
-
-                    <!-- scroller: replace original .causes_active content inside this -->
-                    <div class="causes_scroller" id="causesScroller" role="region" aria-label="Core Program Areas"
-                        tabindex="0">
-                        <!-- Education -->
-                        <div class="single_cause">
-                            <div class="thumb"><img src="img/causes/training.jpg" alt="Education"></div>
-                            <div class="causes_content">
-                                <h4>Education</h4>
-                                <div class="cause_text">
-                                    <p>Key interventions include school feeding, school infrastructure development,
-                                        teachers and student’s capacity building, girls’ education, special needs,
-                                        material support, and Education in Humanitarian.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Livelihood -->
-                        <div class="single_cause">
-                            <div class="thumb"><img src="img/causes/4.jpg" alt="Livelihood"></div>
-                            <div class="causes_content">
-                                <h4>Livelihood</h4>
-                                <div class="cause_text">
-                                    <p>Initiatives include training programs, microcredit schemes, access to MFIs,
-                                        entrepreneurship development, and saving.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Healthcare -->
-                        <div class="single_cause">
-                            <div class="thumb"><img src="img/causes/3.jpg" alt="Healthcare"></div>
-                            <div class="causes_content">
-                                <h4>Healthcare</h4>
-                                <div class="cause_text">
-                                    <p>Initiatives include health education campaigns, mobile health clinics, and access
-                                        to dignity kits.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Humanitarian Support -->
-                        <div class="single_cause">
-                            <div class="thumb"><img src="img/causes/8.jpg" alt="Humanitarian Support"></div>
-                            <div class="causes_content">
-                                <h4>Humanitarian Support</h4>
-                                <div class="cause_text">
-                                    <p>Initiatives include access to basic needs, meal sharing, and participation in
-                                        other government initiatives.</p>
-                                    <p><strong>400 Participants</strong></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Environmental Protection -->
-                        <div class="single_cause">
-                            <div class="thumb"><img src="img/causes/environment.jpg" alt="Environmental Protection"></div>
-                            <div class="causes_content">
-                                <h4>Environmental Protection</h4>
-                                <div class="cause_text">
-                                    <p>School-based reforestation projects and green legacy initiatives.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div><!-- .causes_scroller -->
-
-                    <button class="causes-nav next" aria-label="Next">›</button>
-                </div><!-- .causes-wrapper -->
-
-            </div>
-        </div>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="causes-wrapper">
+          <button class="causes-nav prev" aria-label="Previous">‹</button>
+
+          <div class="causes_scroller" id="causesScroller" role="region" aria-label="Core Program Areas" tabindex="0">
+            <!-- Education -->
+            <div class="single_cause">
+              <div class="thumb"><img src="img/causes/training.jpg" alt="Education"></div>
+              <div class="causes_content">
+                <h4>Education</h4>
+                <div class="cause_text">
+                  <p>Key interventions include school feeding, school infrastructure development, teachers and student’s capacity building, girls’ education, special needs, material support, and Education in Humanitarian.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Livelihood -->
+            <div class="single_cause">
+              <div class="thumb"><img src="img/causes/4.jpg" alt="Livelihood"></div>
+              <div class="causes_content">
+                <h4>Livelihood</h4>
+                <div class="cause_text">
+                  <p>Initiatives include training programs, microcredit schemes, access to MFIs, entrepreneurship development, and saving.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Healthcare -->
+            <div class="single_cause">
+              <div class="thumb"><img src="img/causes/3.jpg" alt="Healthcare"></div>
+              <div class="causes_content">
+                <h4>Healthcare</h4>
+                <div class="cause_text">
+                  <p>Initiatives include health education campaigns, mobile health clinics, and access to dignity kits.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Humanitarian Support -->
+            <div class="single_cause">
+              <div class="thumb"><img src="img/causes/8.jpg" alt="Humanitarian Support"></div>
+              <div class="causes_content">
+                <h4>Humanitarian Support</h4>
+                <div class="cause_text">
+                  <p>Initiatives include access to basic needs, meal sharing, and participation in other government initiatives.</p>
+                  <p><strong>400 Participants</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Environmental Protection -->
+            <div class="single_cause">
+              <div class="thumb"><img src="img/causes/environment.jpg" alt="Environmental Protection"></div>
+              <div class="causes_content">
+                <h4>Environmental Protection</h4>
+                <div class="cause_text">
+                  <p>School-based reforestation projects and green legacy initiatives.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="causes-nav next" aria-label="Next">›</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
+
+<!-- Responsive CSS -->
+<style>
+/* ---------- Margin handling ---------- */
+.popular_causes_area {
+  margin-top: -290px;
+}
+
+@media (max-width: 992px) {
+  .popular_causes_area {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .popular_causes_area {
+    margin-top: 50px;
+  }
+}
+
+/* ---------- Core Styles ---------- */
+.causes-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.causes_scroller {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.causes_scroller::-webkit-scrollbar {
+  height: 8px;
+}
+
+.causes_scroller::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.single_cause {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.single_cause:hover {
+  transform: translateY(-5px);
+}
+
+.single_cause .thumb {
+  width: 100%;
+}
+
+.single_cause .thumb img {
+  width: 100%;
+  height: auto; /* ✅ make height flexible */
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.causes_content {
+  padding: 15px;
+}
+
+.causes_content h4 {
+  font-size: 18px;
+  color: #1c9288;
+  margin-bottom: 10px;
+}
+
+.cause_text p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* ---------- Navigation Buttons ---------- */
+.causes-nav {
+  background: #1c9288;
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background 0.3s ease;
+}
+
+.causes-nav:hover {
+  background: #157066;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 992px) {
+  .causes-wrapper {
+    flex-direction: column;
+  }
+
+  .causes-nav {
+    display: none;
+  }
+
+  .causes_scroller {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .causes_scroller {
+    grid-template-columns: 1fr;
+  }
+
+  .causes_content {
+    padding: 12px;
+  }
+
+  .single_cause .thumb img {
+    max-height: none; /* ✅ allow full height image on mobile */
+  }
+
+  .causes_content h4 {
+    font-size: 17px;
+  }
+
+  .cause_text p {
+    font-size: 14px;
+  }
+}
+</style>
+
+
+<!-- latest_activites_area_end -->
 <div class="popular_causes_area section_padding" style="margin-top: -100px; background: linear-gradient(135deg, #1c9288d3, #6fbe0ed9); padding: 60px 0; border-radius: 15px;">
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -1131,6 +1277,7 @@
         </div>
     </div>
 </div><!-- counter_area_start -->
+>
 <div class="py-5" style="margin-top: -80px;"> 
   <div class="container" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 10px;">
     <div class="overlay" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 10px;">
@@ -1195,9 +1342,27 @@
     </div>
   </div>
 </div>
+<style>
+    @media (max-width: 768px) {
+  .single_counter {
+    margin: 0 auto;
+    width: 90%;
+  }
 
-<!-- counter_area_end -->
+  .icon i {
+    font-size: 1.8rem;
+  }
 
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+</style>
 <!-- Font Awesome for Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
