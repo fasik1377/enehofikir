@@ -203,6 +203,262 @@
                 </div>
             </div>
         </section>
+        <!-- -------------------------
+  5-Image Sliding Carousel
+  Drop this where you want the slider inside your page container
+-------------------------- -->
+<section class="image-slider-section" aria-label="Image slider">
+  <div class="image-slider" id="imageSlider" tabindex="0">
+    <div class="slides-wrapper">
+      <!-- Slide items (replace src with your images) -->
+      <div class="slide"><img src="img/elements/1.jpg" alt="Slide 1 description"></div>
+      <div class="slide"><img src="img/elements/2.jpg" alt="Slide 2 description"></div>
+      <div class="slide"><img src="img/elements/3.jpg" alt="Slide 3 description"></div>
+      <div class="slide"><img src="img/elements/4.jpg" alt="Slide 4 description"></div>
+      <div class="slide"><img src="img/elements/5.jpg" alt="Slide 5 description"></div>
+    </div>
+
+    <!-- Controls -->
+    <button class="ctrl ctrl-prev" aria-label="Previous slide">&lt;</button>
+    <button class="ctrl ctrl-next" aria-label="Next slide">&gt;</button>
+
+    <!-- Dots -->
+    <div class="dots" role="tablist" aria-label="Slide dots">
+      <button class="dot" data-index="0" aria-label="Go to slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Go to slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Go to slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Go to slide 4"></button>
+      <button class="dot" data-index="4" aria-label="Go to slide 5"></button>
+    </div>
+  </div>
+</section>
+
+<style>
+/* -------------------------
+   Slider styles (scoped)
+-------------------------- */
+.image-slider-section { margin: 50px 0; }
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px; /* change max width as needed */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  background: #fff;
+  outline: none; /* focus styles are added separately */
+}
+
+.image-slider:focus { box-shadow: 0 0 0 4px rgba(28,146,136,0.15); }
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+  will-change: transform;
+  width: 100%;
+}
+
+/* Each slide keeps aspect ratio and is responsive */
+.slide {
+  min-width: 100%;
+  flex: 0 0 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: #f7f7f7;
+  user-select: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display:block;
+  object-fit:cover;
+  max-height: 520px; /* adjust as needed */
+}
+
+/* Controls */
+.ctrl {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  border: none;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition: background 0.2s;
+}
+.ctrl:hover { background: rgba(0,0,0,0.65); }
+.ctrl:active { transform: translateY(-50%) scale(0.98); }
+.ctrl:focus { outline: 3px solid rgba(28,146,136,0.25); }
+
+.ctrl-prev { left: 14px; }
+.ctrl-next { right: 14px; }
+
+/* Dots */
+.dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 14px;
+  display:flex;
+  gap: 8px;
+  z-index: 40;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.15s, background 0.15s;
+}
+.dot:hover { transform: scale(1.15); }
+.dot[aria-pressed="true"] {
+  background: #1c9288;
+  box-shadow: 0 2px 6px rgba(28,146,136,0.25);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .ctrl { width: 38px; height: 38px; font-size: 18px; }
+  .slide img { max-height: 360px; }
+}
+@media (max-width: 480px) {
+  .slide img { max-height: 260px; }
+  .ctrl-prev { left: 8px; } .ctrl-next { right: 8px; }
+}
+</style>
+
+<script>
+/* -------------------------
+   Slider behaviour (vanilla JS)
+   Features:
+   - autoplay
+   - pause on hover/focus
+   - prev/next controls
+   - dots navigation
+   - keyboard left/right
+   - swipe (basic)
+-------------------------- */
+(function () {
+  const slider = document.getElementById('imageSlider');
+  const wrapper = slider.querySelector('.slides-wrapper');
+  const slides = Array.from(slider.querySelectorAll('.slide'));
+  const prevBtn = slider.querySelector('.ctrl-prev');
+  const nextBtn = slider.querySelector('.ctrl-next');
+  const dots = Array.from(slider.querySelectorAll('.dot'));
+  const total = slides.length;
+  let index = 0;
+  let autoplayInterval = null;
+  const AUTOPLAY_DELAY = 4000; // 4s
+
+  function goTo(i, instant = false) {
+    index = (i + total) % total;
+    const x = -index * 100;
+    if (instant) {
+      wrapper.style.transition = 'none';
+      wrapper.style.transform = 'translateX(' + x + '%)';
+      // force reflow then re-enable transition
+      void wrapper.offsetWidth;
+      wrapper.style.transition = '';
+    } else {
+      wrapper.style.transform = 'translateX(' + x + '%)';
+    }
+    dots.forEach((d, di) => {
+      const pressed = di === index;
+      d.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+    });
+  }
+
+  function next() { goTo(index + 1); }
+  function prev() { goTo(index - 1); }
+
+  // Hook controls
+  nextBtn.addEventListener('click', () => { next(); resetAutoplay(); });
+  prevBtn.addEventListener('click', () => { prev(); resetAutoplay(); });
+
+  // Dots
+  dots.forEach(d => {
+    d.addEventListener('click', (e) => {
+      const i = Number(d.dataset.index);
+      goTo(i);
+      resetAutoplay();
+    });
+  });
+
+  // Keyboard
+  slider.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { prev(); resetAutoplay(); }
+    if (e.key === 'ArrowRight') { next(); resetAutoplay(); }
+  });
+
+  // Pause on hover / focus
+  slider.addEventListener('mouseenter', pauseAutoplay);
+  slider.addEventListener('mouseleave', startAutoplay);
+  slider.addEventListener('focusin', pauseAutoplay);
+  slider.addEventListener('focusout', startAutoplay);
+
+  // Autoplay
+  function startAutoplay() {
+    if (autoplayInterval) return;
+    autoplayInterval = setInterval(() => {
+      next();
+    }, AUTOPLAY_DELAY);
+  }
+  function pauseAutoplay() {
+    if (autoplayInterval) {
+      clearInterval(autoplayInterval);
+      autoplayInterval = null;
+    }
+  }
+  function resetAutoplay() {
+    pauseAutoplay();
+    startAutoplay();
+  }
+
+  // Touch / swipe support (basic)
+  let touchStartX = 0;
+  let touchEndX = 0;
+  slider.addEventListener('touchstart', (e) => {
+    pauseAutoplay();
+    touchStartX = e.changedTouches[0].screenX;
+  }, {passive: true});
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const dx = touchEndX - touchStartX;
+    const threshold = 40; // min px to count swipe
+    if (dx > threshold) prev();
+    else if (dx < -threshold) next();
+    resetAutoplay();
+  });
+
+  // Initialize
+  goTo(0, true);
+  startAutoplay();
+
+  // Make sure images do not allow dragging to avoid accidental selection
+  slides.forEach(s => {
+    const img = s.querySelector('img');
+    if (img) img.draggable = false;
+  });
+
+  // Expose for debugging (optional)
+  slider._sliderAPI = { goTo, next, prev, pauseAutoplay, startAutoplay };
+})();
+</script>
+
 <div class="about_us_content section_padding bg-light" style="margin-top: -100px;">
     <div class="container">
         <div class="row justify-content-center">
