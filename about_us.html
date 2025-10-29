@@ -663,16 +663,60 @@
             </div>
         </div>
         <div class="card shadow-custom border-0 h-100 p-4 text-center" style="margin-top: 60px;">
-            <!-- Title first -->
-            <h4 style="color: black; font-weight: 700; font-size: 20px; text-align: center; margin-bottom: 15px;">
-                Organogram
-            </h4>
-        
-            <!-- Image below the title -->
-            <div class="card-icon">
-                <img src="img/news/organ.png" alt="Geographic Presence" style="width: 450px; height: 480px;">
-            </div>
-        </div>
+  <!-- Title -->
+  <h4 style="color: black; font-weight: 700; font-size: 20px; text-align: center; margin-bottom: 15px;">
+    Organogram
+  </h4>
+
+  <!-- Image -->
+  <div class="card-icon">
+    <img src="img/news/organ.png" alt="Geographic Presence" class="organogram-img">
+  </div>
+</div>
+
+<style>
+  /* Make image responsive */
+  .organogram-img {
+    width: 100%;
+    height: auto;
+    max-width: 450px; /* keep original limit for desktop */
+    border-radius: 8px;
+  }
+
+  /* Center the image */
+  .card-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Adjust layout for smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+
+    .organogram-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 16px;
+    }
+
+    .card {
+      padding: 15px 5px;
+    }
+  }
+</style>
+
 
     </div>
 </div>
