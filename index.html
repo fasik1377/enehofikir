@@ -873,9 +873,10 @@
   overflow: hidden;
 }
 
+/* ✅ Core Responsive Fix */
 .causes_scroller {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: nowrap; /* Force horizontal */
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -891,13 +892,11 @@
   border-radius: 10px;
 }
 
+/* ✅ Each card should take full width on mobile scrolling */
 .single_cause {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  overflow: hidden;
+  min-width: 280px; /* Important for mobile */
+  max-width: 310px;
   flex: 0 0 auto;
-  transition: transform 0.3s ease;
 }
 
 .single_cause:hover {
@@ -951,36 +950,34 @@
 }
 
 /* ---------- Responsive Adjustments ---------- */
+/* ✅ Hide navigation arrows only on mobile */
 @media (max-width: 992px) {
   .causes-wrapper {
-    flex-direction: column;
+    overflow-x: auto;
   }
-
   .causes-nav {
     display: none;
   }
+}
 
   .causes_scroller {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
-}
 
+/* ✅ Text & image scaling on phones */
 @media (max-width: 768px) {
-  .causes_scroller {
-    grid-template-columns: 1fr;
-  }
-
-  .causes_content {
-    padding: 12px;
+  .single_cause {
+    min-width: 85%; /* Show one card clearly */
   }
 
   .single_cause .thumb img {
-    max-height: none; /* ✅ allow full height image on mobile */
+    max-height: 200px;
+    object-fit: cover;
   }
 
   .causes_content h4 {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .cause_text p {
