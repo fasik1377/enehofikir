@@ -1303,62 +1303,62 @@
     </div>
 </div><!-- counter_area_start -->
 >
-<div class="py-5" style="margin-top: -80px;"> 
-  <div class="container" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 10px;">
-    <div class="overlay" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 10px;">
-      <div class="row text-center" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 10px;">
-        
+<div class="py-5" style="margin-top: -80px;">
+  <div class="container" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 50px;">
+    <div class="overlay" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 50px;">
+      <div class="row text-center justify-content-center flex-wrap" style="background-color: #157066;">
+
         <!-- Women Benefited -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="single_counter shadow-sm p-4 rounded bg-opacity-75">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="single_card shadow-sm p-4 rounded bg-opacity-75">
             <div class="icon mb-2">
               <i class="fas fa-female fa-2x"></i>
             </div>
-            <h3 data-target="4322">4,322</h3>
+            <h3>4,322</h3>
             <p>Women Benefited</p>
           </div>
         </div>
 
         <!-- Children Benefited -->
-        <div class="col-lg-3 col-md-6 mb-4" style="margin-left: -65px;">
-          <div class="single_counter shadow-sm p-4 rounded bg-opacity-75">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="single_card shadow-sm p-4 rounded bg-opacity-75">
             <div class="icon mb-2">
               <i class="fas fa-child fa-2x"></i>
             </div>
-            <h3 data-target="27536">27,536</h3>
+            <h3>27,536</h3>
             <p>Children Benefited</p>
           </div>
         </div>
 
         <!-- Teachers Reached -->
-        <div class="col-lg-2 col-md-6 mb-4" style="margin-left: -70px;">
-          <div class="single_counter shadow-sm p-4 rounded bg-opacity-75">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="single_card shadow-sm p-4 rounded bg-opacity-75">
             <div class="icon mb-2">
               <i class="fas fa-chalkboard-teacher fa-2x"></i>
             </div>
-            <h3 data-target="543">543</h3>
+            <h3>543</h3>
             <p>Teachers Reached</p>
           </div>
         </div>
 
         <!-- Adult Men Reached -->
-        <div class="col-lg-2 col-md-6 mb-4" style="margin-left: 20px;">
-          <div class="single_counter shadow-sm p-4 rounded bg-opacity-75">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="single_card shadow-sm p-4 rounded bg-opacity-75">
             <div class="icon mb-2">
               <i class="fas fa-male fa-2x"></i>
             </div>
-            <h3 data-target="1500">1500</h3>
+            <h3>1,500</h3>
             <p>Adult Men Reached</p>
           </div>
         </div>
 
         <!-- Schools Supported -->
-        <div class="col-lg-2 col-md-6 mb-4" style="margin-left: 25px;">
-          <div class="single_counter shadow-sm p-4 rounded bg-opacity-35">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+          <div class="single_card shadow-sm p-4 rounded bg-opacity-35">
             <div class="icon mb-2">
               <i class="fas fa-school fa-2x"></i>
             </div>
-            <h3 data-target="14">14</h3>
+            <h3>14</h3>
             <p>Schools Supported</p>
           </div>
         </div>
@@ -1367,90 +1367,62 @@
     </div>
   </div>
 </div>
-<style>
-    @media (max-width: 768px) {
-  .single_counter {
-    margin: 0 auto;
-    width: 90%;
-  }
 
-  .icon i {
-    font-size: 1.8rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-  }
-}
-
-</style>
-<!-- Font Awesome for Icons -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-<!-- Counter Animation -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll('.counter');
-        counters.forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            let count = 0;
-            const increment = target / 200; // adjust speed
-
-            const updateCounter = () => {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.ceil(count).toLocaleString();
-                    setTimeout(updateCounter, 20);
-                } else {
-                    counter.innerText = target.toLocaleString();
-                }
-            };
-
-            updateCounter();
-        });
-    });
-</script>
-
 <style>
-    .single_counter {
-        background: rgba(255, 255, 255, 0.1);
-        margin-top: 50px;
-        padding: 0px;
-        width: 200px;
-        height: 240px;
-        border-radius: 40px;
-        /* Transparent card */
-        color: #fff;
-        /* White text */
-        transition: transform 0.3s ease, background 0.3s ease;
-    }
+.single_card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 180px;
+    height: 200px;
+    border-radius: 70px;
+    color: #fff;
+    margin: 10px auto;
+    transition: transform 0.4s ease, background 0.4s ease;
+}
 
-    .single_counter:hover {
-        transform: translateY(-5px);
-        background: rgba(255, 255, 255, 0.2);
-    }
+.single_card:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
 
-    .single_counter h3 {
-        font-size: 2.1rem;
-        font-weight: bold;
-        color: #fff;
-    }
+.single_card .icon i {
+    color: #fff;
+    margin-bottom: 10px;
+}
 
-    .single_counter p {
-        margin: 0;
-        font-size: 1rem;
-        color: #ddd;
-    }
+.single_card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
 
-    .single_counter .icon i {
-        color: #fff;
-        /* White icons */
+.single_card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .single_card {
+        width: 140px;
+        height: 180px;
     }
+    .single_card .icon i {
+        font-size: 1.5rem;
+    }
+    .single_card h3 {
+        font-size: 1.4rem;
+    }
+    .single_card p {
+        font-size: 0.9rem;
+    }
+}
 </style>
+
 <!-- program_participants_area_start -->
 <div class="program_participants_area section_padding py-5" style="background-color: #f8f9fa;">
     <div class="container">
