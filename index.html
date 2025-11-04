@@ -1622,44 +1622,71 @@
 <!-- news__area_end  --><!-- current_partners_area_start -->
 <style>
     .single_partner {
-        box-shadow: 0 4px 10px #1c9288d3;
-        /* Custom shadow color */
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        width: 257px;
-        /* Fixed width */
-        height: 180px;
-        border-radius: 40px;
-        /* Fixed height */
+        width: 260px;
+        height: 200px;
+        border-radius: 30px;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+        padding: 20px;
         margin: auto;
+
+        /* Smooth animation effects */
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 6px 15px rgba(28, 146, 136, 0.25);
     }
 
+    /* Image optimization */
     .single_partner img {
         max-height: 80px;
         object-fit: contain;
+        transition: transform 0.4s ease;
     }
 
     .single_partner h6 {
-        margin-top: 10px;
+        margin-top: 12px;
         font-size: 16px;
-        color: #333;
+        font-weight: 600;
+        color: #111;
+        transition: color 0.3s ease;
     }
 
+    /* Hover Animation */
     .single_partner:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px #1c9288d3;
-        /* Stronger shadow on hover */
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 12px 30px rgba(28, 146, 136, 0.35);
     }
 
-    /* Optional: keeps cards aligned nicely in non-carousel view */
+    /* Image slight pop on hover */
+    .single_partner:hover img {
+        transform: scale(1.1);
+    }
+
+    /* Text slight color shift on hover */
+    .single_partner:hover h6 {
+        color: #1c9288;
+    }
+
+    /* Align cards in carousel */
     .partners_slider .owl-item {
         display: flex;
         justify-content: center;
     }
+    .single_partner {
+    animation: softFloat 2s ease-in-out infinite;
+}
+
+@keyframes softFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
 </style>
+
 
 <div class="current_partners_area section_padding py-5" style="background-color: #f8f9fa;">
     <div class="container">
