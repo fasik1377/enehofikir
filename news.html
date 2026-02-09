@@ -496,7 +496,84 @@
           <!-- Sidebar kept as is -->
           <div class="col-lg-4">
             <div class="blog_right_sidebar">
-              <!-- (Sidebar widgets remain unchanged: search, category, recent post, tags, instagram, newsletter) -->
+              <aside class="single_sidebar_widget events_widget">
+                <h4 class="widget_title" style="color: #1c9288">
+                  Upcoming Events
+                </h4>
+
+                <!-- Event 1 -->
+                <div class="single_event">
+                  <div class="event_thumb">
+                    <img
+                      src="img/news/1.jpg"
+                      alt="School Feeding Event"
+                      style="
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 12px;
+                        padding: 12px;
+                      "
+                    />
+                  </div>
+                  <div class="event_content">
+                    <span class="event_date" style="padding: 4px"
+                      >15 Feb 2026</span
+                    >
+                    <h5>School Feeding Awareness Program</h5>
+                    <p><i class="fa fa-map-marker"></i> Addis Ababa</p>
+                  </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="single_event">
+                  <div class="event_thumb">
+                    <img
+                      src="img/news/12.jpg"
+                      alt="Scholarship Meetup"
+                      style="
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 12px;
+                        padding: 12px;
+                      "
+                    />
+                  </div>
+                  <div class="event_content">
+                    <span class="event_date" style="padding: 4px"
+                      >03 Mar 2026</span
+                    >
+                    <h5>Merit Scholarship Student Meetup</h5>
+                    <p><i class="fa fa-map-marker"></i> Misraqgoh School</p>
+                  </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="single_event">
+                  <div class="event_thumb">
+                    <img
+                      src="img/news/main0.jpg"
+                      alt="Donor Recognition"
+                      style="
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 12px;
+                        padding: 12px;
+                      "
+                    />
+                  </div>
+                  <div class="event_content">
+                    <span class="event_date" style="padding: 4px"
+                      >21 Apr 2026</span
+                    >
+                    <h5>Donors Recognition Day</h5>
+                    <p><i class="fa fa-map-marker"></i> Addis Ababa</p>
+                  </div>
+                </div>
+
+                <a href="#" class="boxed-btn w-100 text-center mt-3">
+                  View All Events
+                </a>
+              </aside>
             </div>
           </div>
         </div>
@@ -776,6 +853,66 @@
         width: 150px;
         height: auto;
         filter: drop-shadow(4px 4px 3px #ffffff);
+      }
+      /* Events Widget */
+      .events_widget {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      .single_event {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .single_event:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      .event_date {
+        background: #1c9288;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        text-align: center;
+        padding-top: 8px;
+        margin-right: 15px;
+      }
+
+      .event_date h3 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1;
+        color: #fff;
+      }
+
+      .event_date span {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+
+      .event_info h5 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #222;
+      }
+
+      .event_info p {
+        margin: 0;
+        font-size: 14px;
+        color: #777;
+      }
+
+      .event_info i {
+        color: #1c9288;
+        margin-right: 5px;
       }
     </style>
 
