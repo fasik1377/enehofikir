@@ -492,87 +492,91 @@
               </nav>
             </div>
           </div>
-
-          <!-- Sidebar kept as is -->
+          <!-- Sidebar -->
           <div class="col-lg-4">
             <div class="blog_right_sidebar">
               <aside class="single_sidebar_widget events_widget">
-                <h4 class="widget_title" style="color: #1c9288">
-                  Upcoming Events
-                </h4>
+                <h4 class="widget_title">Upcoming Events</h4>
 
                 <!-- Event 1 -->
-                <div class="single_event">
-                  <div class="event_thumb">
+                <div class="event_card">
+                  <div class="event_image">
                     <img
-                      src="img/news/1.jpg"
+                      src="img/news/child_event_1.jpg"
                       alt="School Feeding Event"
-                      style="
-                        width: 80px;
-                        height: 80px;
-                        border-radius: 12px;
-                        padding: 12px;
-                      "
                     />
                   </div>
-                  <div class="event_content">
-                    <span class="event_date" style="padding: 4px"
-                      >15 Feb 2026</span
-                    >
+                  <div class="event_body">
+                    <span class="event_date">27th March 2026</span>
+                    <h5>Children and youth Conferences in Ethiopia 2026</h5>
+                    <p><i class="fa fa-map-marker"></i>Dire Dawa, Ethiopia</p>
+                  </div>
+                </div>
+                <div class="event_card">
+                  <div class="event_image">
+                    <img src="img/news/nia1.jpg" alt="School Feeding Event" />
+                  </div>
+                  <div class="event_body">
+                    <span class="event_date">2 April 2026</span>
+                    <h5>Ethiopian Autism Awareness Day</h5>
+                    <p><i class="fa fa-map-marker"></i>Addis Ababa, Ethiopia</p>
+                  </div>
+                </div>
+                <div class="event_card">
+                  <div class="event_image">
+                    <img
+                      src="img/news/child_event_2.jpg"
+                      alt="School Feeding Event"
+                    />
+                  </div>
+                  <div class="event_body">
+                    <span class="event_date">11 July 2026</span>
+                    <h5>Children and youth Conference</h5>
+                    <p><i class="fa fa-map-marker"></i>Addis Ababa, Ethiopia</p>
+                  </div>
+                </div>
+                <!-- Event 1 -->
+                <div class="event_card">
+                  <div class="event_image">
+                    <img src="img/news/1.jpg" alt="School Feeding Event" />
+                  </div>
+                  <div class="event_body">
+                    <span class="event_date">15 Feb 2026</span>
                     <h5>School Feeding Awareness Program</h5>
                     <p><i class="fa fa-map-marker"></i> Addis Ababa</p>
                   </div>
                 </div>
 
                 <!-- Event 2 -->
-                <div class="single_event">
-                  <div class="event_thumb">
-                    <img
-                      src="img/news/12.jpg"
-                      alt="Scholarship Meetup"
-                      style="
-                        width: 80px;
-                        height: 80px;
-                        border-radius: 12px;
-                        padding: 12px;
-                      "
-                    />
+                <div class="event_card">
+                  <div class="event_image">
+                    <img src="img/news/12.jpg" alt="Scholarship Meetup" />
                   </div>
-                  <div class="event_content">
-                    <span class="event_date" style="padding: 4px"
-                      >03 Mar 2026</span
-                    >
+                  <div class="event_body">
+                    <span class="event_date">03 Mar 2026</span>
                     <h5>Merit Scholarship Student Meetup</h5>
                     <p><i class="fa fa-map-marker"></i> Misraqgoh School</p>
                   </div>
                 </div>
 
                 <!-- Event 3 -->
-                <div class="single_event">
-                  <div class="event_thumb">
-                    <img
-                      src="img/news/main0.jpg"
-                      alt="Donor Recognition"
-                      style="
-                        width: 80px;
-                        height: 80px;
-                        border-radius: 12px;
-                        padding: 12px;
-                      "
-                    />
+                <div class="event_card">
+                  <div class="event_image">
+                    <img src="img/news/main0.jpg" alt="Donor Recognition" />
                   </div>
-                  <div class="event_content">
-                    <span class="event_date" style="padding: 4px"
-                      >21 Apr 2026</span
-                    >
+                  <div class="event_body">
+                    <span class="event_date">21 Apr 2026</span>
                     <h5>Donors Recognition Day</h5>
                     <p><i class="fa fa-map-marker"></i> Addis Ababa</p>
                   </div>
                 </div>
 
-                <a href="#" class="boxed-btn w-100 text-center mt-3">
+                <button
+                  id="toggleEventsBtn"
+                  class="boxed-btn w-100 text-center mt-3"
+                >
                   View All Events
-                </a>
+                </button>
               </aside>
             </div>
           </div>
@@ -855,66 +859,120 @@
         filter: drop-shadow(4px 4px 3px #ffffff);
       }
       /* Events Widget */
+      /* Events Widget Container */
       .events_widget {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      }
+
+      /* Title */
+      .events_widget .widget_title {
+        color: #1c9288;
+        font-weight: 700;
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      /* Event Card */
+      .event_card {
         background: #fff;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 14px;
+        overflow: hidden;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        transition: all 0.4s ease;
       }
 
-      .single_event {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #eee;
+      .event_card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
       }
 
-      .single_event:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
+      /* Image Container */
+      .event_image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .event_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      /* Zoom Animation */
+      .event_card:hover .event_image img {
+        transform: scale(1.1);
+      }
+
+      /* Event Body */
+      .event_body {
+        padding: 20px;
       }
 
       .event_date {
-        background: #1c9288;
-        color: #fff;
-        width: 60px;
-        height: 60px;
-        border-radius: 8px;
-        text-align: center;
-        padding-top: 8px;
-        margin-right: 15px;
-      }
-
-      .event_date h3 {
-        margin: 0;
-        font-size: 20px;
-        line-height: 1;
-        color: #fff;
-      }
-
-      .event_date span {
+        display: inline-block;
         font-size: 13px;
-        text-transform: uppercase;
+        font-weight: 600;
+        color: #1c9288;
+        margin-bottom: 8px;
       }
 
-      .event_info h5 {
-        font-size: 16px;
-        margin-bottom: 5px;
+      .event_body h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
         color: #222;
+        line-height: 1.4;
       }
 
-      .event_info p {
-        margin: 0;
+      .event_body p {
         font-size: 14px;
         color: #777;
+        margin: 0;
       }
 
-      .event_info i {
+      .event_body i {
         color: #1c9288;
-        margin-right: 5px;
+        margin-right: 8px;
+      }
+      .event_card.hidden_event {
+        display: none;
       }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const events = document.querySelectorAll(
+          "#eventsContainer .event_card",
+        );
+        const toggleBtn = document.getElementById("toggleEventsBtn");
+
+        const defaultVisible = 4;
+        let expanded = false;
+
+        // Hide extra events initially
+        events.forEach((event, index) => {
+          if (index >= defaultVisible) {
+            event.classList.add("hidden_event");
+          }
+        });
+
+        toggleBtn.addEventListener("click", function () {
+          expanded = !expanded;
+
+          events.forEach((event, index) => {
+            if (index >= defaultVisible) {
+              event.classList.toggle("hidden_event");
+            }
+          });
+
+          toggleBtn.textContent = expanded ? "Show Less" : "View All Events";
+        });
+      });
+    </script>
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
