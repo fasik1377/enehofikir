@@ -26,7 +26,7 @@
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
   </head>
 
-  <body>
+  <body data-page="contact" class="modern-contact-page">
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -35,131 +35,7 @@
       </p>
     <![endif]-->
     <!-- header-start -->
-    <header>
-      <div class="header-area">
-        <div class="header-top_area">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xl-6 col-md-12 col-lg-8">
-                <div class="short_contact_list">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-phone"></i> +251 902 200 020</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="fa fa-envelope"></i>
-                        mahletworku@enehofiker.org</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-6 col-md-6 col-lg-4">
-                <div class="social_media_links d-none d-lg-block">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61583776258199"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    href="https://www.instagram.com/eneho_fikir?igsh=N2lhZng4NGwybHVr"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                  <a href="https://www.linkedin.com/company/eneho-fiker/"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    href="https://www.youtube.com/channel/UCWWUkwSKkab4SGOPQ10S5Lw"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="sticky-header" class="main-header-area">
-          <div class="container-fluid">
-            <div class="row align-items-center">
-              <div class="col-xl-3 col-lg-3">
-                <div
-                  style="
-                    background-color: white;
-                    text-align: center;
-                    width: 180px;
-                    height: 100px; /* reduced height */
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    box-sizing: border-box;
-                    border-radius: 25px;
-                  "
-                >
-                  <a
-                    href="index.html"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                      text-decoration: none;
-                    "
-                  >
-                    <img
-                      src="img/logo.png"
-                      alt="Enehofikir Logo"
-                      style="
-                        max-width: 100%;
-                        max-height: 100%;
-                        margin: 0;
-                        padding: 0;
-                        display: block;
-                      "
-                    />
-                    <div
-                      style="
-                        color: black;
-                        font-weight: bold;
-                        margin: 0;
-                        padding: 0;
-                        font-size: 8px;
-                      "
-                    >
-                      Our Children Our Future
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-xl-9 col-lg-9">
-                <div class="main-menu">
-                  <nav>
-                    <ul id="navigation">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="project.html">Projects</a></li>
-                      <li><a href="news.html">News</a></li>
-                      <li><a href="about_us.html">About Us</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </nav>
-                  <div class="Appointment">
-                    <div class="book_btn d-none d-lg-block">
-                      <a data-scroll-nav="1" href="#">Make a donation</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="mobile_menu d-block d-lg-none"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- header-end -->
+    <div id="site-header"></div>
 
     <!-- bradcam_area_start  -->
     <div
@@ -169,7 +45,12 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="bradcam_text text-center">
+              <span class="contact-hero_eyebrow wow fadeInUp">We are here to help</span>
               <h3>Contact</h3>
+              <p class="wow fadeInUp" data-wow-delay="0.1s">
+                Reach our team for partnerships, program support, volunteering,
+                donations, or community questions.
+              </p>
             </div>
           </div>
         </div>
@@ -179,8 +60,26 @@
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
       <div class="container">
+        <div class="contact-intro_grid wow fadeInUp">
+          <a href="tel:+251902200020" class="contact-intro_card">
+            <i class="fa fa-phone"></i>
+            <span>Call Us</span>
+            <strong>+251 902 200 020</strong>
+          </a>
+          <a href="mailto:mahletworku@enehofiker.org" class="contact-intro_card">
+            <i class="fa fa-envelope"></i>
+            <span>Email</span>
+            <strong>mahletworku@enehofiker.org</strong>
+          </a>
+          <div class="contact-intro_card">
+            <i class="fa fa-map-marker"></i>
+            <span>Office</span>
+            <strong>Addis Ababa, Ethiopia</strong>
+          </div>
+        </div>
+
         <!-- Map Section Start -->
-        <div class="map-section mb-5 pb-4">
+        <div class="map-section mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.1234567890123!2d38.7812148!3d9.0056443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85641a3876c5:0x62a0429474b6f4e8!2sEneho+Fikir+Charity!5e0!3m2!1sen!2set!4v1633036800000"
             width="100%"
@@ -192,39 +91,26 @@
           ></iframe>
         </div>
 
-        <!-- Responsive CSS -->
-        <style>
-          .map-section iframe {
-            border-radius: 10px; /* optional styling */
-          }
-
-          /* Tablet screens */
-          @media (max-width: 992px) {
-            .map-section iframe {
-              height: 400px;
-            }
-          }
-
-          /* Mobile screens */
-          @media (max-width: 576px) {
-            .map-section iframe {
-              height: 300px;
-            }
-          }
-        </style>
-
-        <div class="row">
+        <div class="row contact-content_row">
           <div class="col-12">
-            <h2 class="contact-title">Get in Touch</h2>
+            <div class="contact-heading_block wow fadeInUp">
+              <span>Send a Message</span>
+              <h2 class="contact-title">Get in Touch</h2>
+              <p>
+                Tell us how we can help. We usually respond during working
+                hours from Monday to Friday.
+              </p>
+            </div>
           </div>
 
           <div class="col-lg-8">
             <form
-              class="form-contact contact_form"
+              class="form-contact contact_form contact-form_card wow fadeInUp"
               action="contact_process.php"
               method="post"
               id="contactForm"
               novalidate="novalidate"
+              data-wow-delay="0.1s"
             >
               <div class="row">
                 <div class="col-12">
@@ -290,13 +176,14 @@
                   type="submit"
                   class="button button-contactForm boxed-btn"
                 >
-                  Send
+                  Send Message
                 </button>
               </div>
             </form>
           </div>
 
           <div class="col-lg-3 offset-lg-1">
+            <div class="contact-info_panel wow fadeInUp" data-wow-delay="0.2s">
             <div class="media contact-info">
               <span class="contact-info__icon"><i class="ti-home"></i></span>
               <div class="media-body">
@@ -328,289 +215,19 @@
                 <p>Send us your query anytime!</p>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ================ contact section end ================= -->
-    <!-- footer_start  -->
-    <footer class="footer">
-      <!-- Full background for footer -->
-      <div class="footer_top full-width">
-        <div class="container">
-          <!-- Keep container here to align content -->
-          <div class="row">
-            <!-- About Enehofikir -->
-            <div class="col-xl-4 col-md-6 col-lg-4 mb-4">
-              <div class="footer_widget">
-                <a href="index.html" class="footer-logo-wrapper text-center">
-                  <img
-                    src="img/logo.png"
-                    alt="Enehofikir Logo"
-                    class="footer-logo"
-                  />
-                  <p class="logo-tagline">Our Children Our Future</p>
-                </a>
-                <style>
-                  .footer-logo-wrapper {
-                    display: inline-block;
-                    text-align: center;
-                    text-decoration: none;
-                  }
+    <div id="site-footer"></div>
 
-                  .footer-logo {
-                    max-width: 160px;
-                    /* adjust as needed */
-                    height: auto;
-                    display: block;
-                    margin: 0 auto;
-                  }
-
-                  .logo-tagline {
-                    color: #1c9288d3;
-                    /* same color theme as your site */
-                    font-size: 14px;
-                    font-weight: 600;
-                    margin-top: 6px;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                  }
-                </style>
-                <p>
-                  Enehofikir is a non-profit organization founded in 2019 G.C.
-                  We transform the lives of vulnerable children, teachers, young
-                  people, and women through education, healthcare, livelihood
-                  support, and emergency aid programs.
-                </p>
-                <div class="socail_links mt-3">
-                  <ul
-                    style="
-                      display: flex;
-                      gap: 12px;
-                      list-style: none;
-                      padding: 0;
-                    "
-                  >
-                    <li>
-                      <a
-                        href="https://www.facebook.com/profile.php?id=61583776258199"
-                        class="social-circle"
-                        ><i class="ti-facebook"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/eneho_fikir?igsh=N2lhZng4NGwybHVr"
-                        class="social-circle"
-                        ><i class="ti-instagram"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/company/eneho-fiker/"
-                        class="social-circle"
-                        ><i class="ti-linkedin"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/channel/UCWWUkwSKkab4SGOPQ10S5Lw"
-                        class="social-circle"
-                        ><i class="ti-youtube"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-xl-2 col-md-6 col-lg-2 mb-4">
-              <div class="footer_widget">
-                <h3 class="footer_title">Quick Links</h3>
-                <ul class="links">
-                  <li><a href="project.html">Projects</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="about_us.html">About Us</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="#">Donate</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-xl-3 col-md-6 col-lg-3 mb-4">
-              <div class="footer_widget">
-                <h3 class="footer_title">Contact Us</h3>
-                <div class="contacts">
-                  <p>
-                    <i class="fa fa-phone"></i> +251 902 200 020 <br />
-                    <i class="fa fa-envelope"></i> mahletworku@enehofiker.org
-                    <br />
-                    <i class="fa fa-map-marker"></i> Addis Ababa, Ethiopia
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Our Impact -->
-            <div class="col-xl-3 col-md-6 col-lg-3 mb-4">
-              <div class="footer_widget">
-                <h3 class="footer_title">Our Impact</h3>
-                <ul class="news_links">
-                  <li class="impact-item">
-                    <div class="thumb">
-                      <a href="project.html"
-                        ><img
-                          src="img/news/1.jpg"
-                          alt=""
-                          style="width: 100px; height: 80px"
-                      /></a>
-                    </div>
-                    <div class="info">
-                      <a href="project.html">
-                        <h4>School Feeding Program</h4>
-                      </a>
-                      <span>Supporting 300+ students yearly</span>
-                    </div>
-                  </li>
-                  <li class="impact-item">
-                    <div class="thumb">
-                      <a href="project.html"
-                        ><img
-                          src="img/news/2.jpg"
-                          alt=""
-                          style="width: 100px; height: 80px"
-                      /></a>
-                    </div>
-                    <div class="info">
-                      <a href="project.html">
-                        <h4>Medical Campaigns</h4>
-                      </a>
-                      <span>5,000+ people reached</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Copyright -->
-      <div class="copy-right_text full-width">
-        <div class="container">
-          <div class="row">
-            <div class="bordered_1px"></div>
-            <div class="col-xl-12">
-              <p class="copy_right text-center">
-                &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                Enehofikir Organization | All Rights Reserved
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- footer_end  -->
-
-    <!-- Custom Footer Styles -->
-    <style>
-      .footer {
-        width: 100%;
-      }
-
-      /* Gradient background for footer */
-      .footer_top.full-width {
-        width: 100%;
-        background: linear-gradient(135deg, #1c9288d3, #1c9288);
-        color: #fff;
-        padding: 40px 0;
-      }
-
-      .copy-right_text.full-width {
-        background: #1c9288;
-        color: #fff;
-        padding: 15px 0;
-      }
-
-      /* White text everywhere */
-      .footer p,
-      .footer a,
-      .footer span,
-      .footer_title {
-        color: #fff !important;
-      }
-
-      .footer_title {
-        font-weight: 600;
-        margin-bottom: 15px;
-        position: relative;
-      }
-
-      .footer_title::after {
-        content: "";
-        width: 40px;
-        height: 3px;
-        background: #fff;
-        position: absolute;
-        bottom: -8px;
-        left: 0;
-        border-radius: 2px;
-      }
-
-      .links li a {
-        transition: color 0.3s;
-      }
-
-      .links li a:hover {
-        color: #ffde59;
-      }
-
-      .social-circle {
-        display: inline-block;
-        background: #fff;
-        color: #1c9288;
-        padding: 10px;
-        border-radius: 50%;
-        transition: all 0.3s;
-      }
-
-      .social-circle:hover {
-        background: #ffde59;
-        color: #1c9288;
-      }
-
-      .impact-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-        transition: transform 0.3s;
-      }
-
-      .impact-item:hover {
-        transform: translateX(5px);
-      }
-
-      .impact-item .thumb img {
-        width: 70px;
-        border-radius: 6px;
-        margin-right: 10px;
-      }
-
-      /* Logo glow effect */
-      .footer-logo {
-        width: 150px;
-        height: auto;
-        filter: drop-shadow(4px 4px 3px #ffffff);
-      }
-    </style>
+    
 
     <!-- JS here -->
+    <script src="js/site-layout.js"></script>
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -654,3 +271,5 @@
     </script>
   </body>
 </html>
+
+
