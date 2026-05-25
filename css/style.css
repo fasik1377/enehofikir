@@ -10130,25 +10130,25 @@ h6 {
 
 @media (min-width: 992px) {
   .site-shell_header .main-header-area .row {
-    min-height: 92px;
+    min-height: 148px;
   }
 
   .site-shell_header .main-header-area .main-menu {
-    min-height: 92px;
+    min-height: 148px;
   }
 
   .site-shell_header .main-header-area .col-xl-3,
   .site-shell_header .main-header-area .col-lg-3 {
-    flex: 0 0 292px;
-    max-width: 292px;
+    flex: 0 0 384px;
+    max-width: 384px;
     justify-content: flex-start;
     padding-right: 20px;
   }
 
   .site-shell_header .main-header-area .col-xl-9,
   .site-shell_header .main-header-area .col-lg-9 {
-    flex: 0 0 calc(100% - 292px);
-    max-width: calc(100% - 292px);
+    flex: 0 0 calc(100% - 384px);
+    max-width: calc(100% - 384px);
   }
 }
 
@@ -10181,8 +10181,8 @@ h6 {
 .site-shell_header .brand-card_logo {
   --brand-logo-hover-scale: 1;
   --brand-logo-hover-rotate: 0deg;
-  width: 84px;
-  height: 84px;
+  width: 142px;
+  height: 142px;
   max-width: none;
   max-height: none;
   object-fit: contain;
@@ -10407,13 +10407,13 @@ h6 {
   }
 
   .site-shell_header .main-header-area .row {
-    min-height: 72px;
+    min-height: 104px;
   }
 
   .site-shell_header .brand-card_logo {
-    width: 64px;
-    height: 64px;
-    padding: 7px;
+    width: 96px;
+    height: 96px;
+    padding: 8px;
   }
 
   .site-shell_header .brand-card_name {
