@@ -10130,25 +10130,25 @@ h6 {
 
 @media (min-width: 992px) {
   .site-shell_header .main-header-area .row {
-    min-height: 148px;
+    min-height: 220px;
   }
 
   .site-shell_header .main-header-area .main-menu {
-    min-height: 148px;
+    min-height: 220px;
   }
 
   .site-shell_header .main-header-area .col-xl-3,
   .site-shell_header .main-header-area .col-lg-3 {
-    flex: 0 0 384px;
-    max-width: 384px;
+    flex: 0 0 390px;
+    max-width: 390px;
     justify-content: flex-start;
-    padding-right: 20px;
+    padding-right: 14px;
   }
 
   .site-shell_header .main-header-area .col-xl-9,
   .site-shell_header .main-header-area .col-lg-9 {
-    flex: 0 0 calc(100% - 384px);
-    max-width: calc(100% - 384px);
+    flex: 0 0 calc(100% - 390px);
+    max-width: calc(100% - 390px);
   }
 }
 
@@ -10170,7 +10170,7 @@ h6 {
 
 .site-shell_header .brand-card_link {
   flex-direction: row;
-  gap: 16px;
+  gap: 12px;
   padding: 0;
   color: #17212b;
   position: relative;
@@ -10181,15 +10181,15 @@ h6 {
 .site-shell_header .brand-card_logo {
   --brand-logo-hover-scale: 1;
   --brand-logo-hover-rotate: 0deg;
-  width: 142px;
-  height: 142px;
+  width: 214px;
+  height: 214px;
   max-width: none;
   max-height: none;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.86);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 9px;
+  padding: 12px;
   box-shadow: 0 14px 32px rgba(15, 80, 75, 0.24), 0 0 0 0 rgba(255, 255, 255, 0.32);
   animation: brandLogoFloat 4.8s ease-in-out infinite, brandLogoGlow 3.6s ease-in-out infinite;
   transform-origin: center;
@@ -10234,19 +10234,21 @@ h6 {
 }
 
 .site-shell_header .site-nav_cluster {
-  gap: 18px;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 .site-shell_header #navigation {
   justify-content: flex-end;
-  gap: 4px;
+  gap: 2px;
+  flex-wrap: nowrap;
 }
 
 .site-shell_header #navigation li a {
   min-height: 42px;
   display: inline-flex;
   align-items: center;
-  padding: 0 13px;
+  padding: 0 10px;
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.9);
   font-size: 15px;
@@ -10407,13 +10409,13 @@ h6 {
   }
 
   .site-shell_header .main-header-area .row {
-    min-height: 104px;
+    min-height: 140px;
   }
 
   .site-shell_header .brand-card_logo {
-    width: 96px;
-    height: 96px;
-    padding: 8px;
+    width: 132px;
+    height: 132px;
+    padding: 9px;
   }
 
   .site-shell_header .brand-card_name {
