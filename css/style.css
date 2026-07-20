@@ -8640,6 +8640,14 @@ h6 {
   text-align: center;
 }
 
+.modern-home-page .video-limit-note {
+  min-height: 18px;
+  margin: 9px 0 0;
+  color: #587572;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .modern-home-page .video-watch-btn,
 .modern-home-page .activities-support-btn {
   min-height: 46px;
@@ -12754,6 +12762,12 @@ h6 {
   bottom: 36px;
   z-index: 2;
   color: #ffffff;
+}
+
+.modern-home-page iframe.video-frame {
+  height: auto;
+  min-height: 100%;
+  border: 0;
 }
 
 .gallery-spotlight-slide figcaption span,

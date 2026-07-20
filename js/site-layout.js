@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <li><a href="project.html">Projects</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="news.html">News</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
                         <li><a href="about_us.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                       </ul>
@@ -149,6 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li><a href="project.html">Projects</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="news.html">News</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="donation.html">Donate</a></li>

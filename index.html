@@ -715,22 +715,23 @@
       <!-- Video Column -->
       <div class="col-lg-6 col-md-12">
         <div class="video-wrapper">
-          <a class="video-frame video-preview-link" href="https://www.youtube.com/watch?v=YE03QgqoPpI&t=11s" target="_blank" rel="noopener" aria-label="Watch latest community activities video on YouTube">
-            <img src="https://img.youtube.com/vi/YE03QgqoPpI/hqdefault.jpg" alt="Latest Eneho Fikir community activities video">
+          <a class="video-frame video-preview-link limited-youtube-link" href="https://www.youtube.com/watch?v=KNlQ7d5u5-I" aria-label="Watch the latest community activity video on YouTube for up to four minutes">
+            <img src="https://img.youtube.com/vi/KNlQ7d5u5-I/hqdefault.jpg" alt="Latest Eneho Fikir community activity video">
             <span class="video-preview-overlay">
               <span class="video-preview-play"><i class="fa fa-youtube-play"></i></span>
               <span class="video-preview-copy">
                 <strong>Watch latest activity video</strong>
-                <small>Opens on YouTube from 0:11</small>
+                <small>Opens on YouTube · limited to 4 minutes</small>
               </span>
             </span>
           </a>
         </div>
 
         <div class="video-action">
-          <a href="https://www.youtube.com/watch?v=YE03QgqoPpI&t=11s" target="_blank" rel="noopener" class="video-watch-btn">
-            <i class="fa fa-youtube-play"></i> Watch on YouTube
+          <a href="https://www.youtube.com/watch?v=KNlQ7d5u5-I" class="video-watch-btn limited-youtube-link">
+            <i class="fa fa-youtube-play"></i> Watch 4-minute highlight
           </a>
+          <p class="video-limit-note" id="videoLimitStatus" role="status" aria-live="polite"></p>
         </div>
       </div>
 
@@ -1914,6 +1915,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/gallery-data.js"></script>
+    <script src="js/home-video.js"></script>
 </body>
 
 </html>
