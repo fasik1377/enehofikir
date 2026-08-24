@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="short_contact_list">
                 <ul>
                   <li><a href="tel:+251902200020"><i class="fa fa-phone"></i> +251 902 200 020</a></li>
-                  <li><a href="mailto:mahletworku@enehofiker.org"><i class="fa fa-envelope"></i> mahletworku@enehofiker.org</a></li>
+                  <li><a href="mailto:info@enehofiker.org"><i class="fa fa-envelope"></i>info@enehofiker.org</a></li>
                 </ul>
               </div>
               <div class="social_media_links d-none d-lg-flex">
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <div class="contacts">
                     <p>
                       <i class="fa fa-phone"></i> +251 902 200 020 <br />
-                      <i class="fa fa-envelope"></i> mahletworku@enehofiker.org <br />
+                      <i class="fa fa-envelope"></i> info@enehofiker.org <br />
                       <i class="fa fa-map-marker"></i> Addis Ababa, Ethiopia
                     </p>
                   </div>

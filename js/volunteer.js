@@ -62,7 +62,7 @@
         "Preferred format: " + data.get("format"), "", "Skills and motivation:", data.get("message"), "", "Thank you."
       ].join("\n");
       status.textContent = "Your email app is opening with your application ready to review and send.";
-      window.location.href = "mailto:mahletworku@enehofiker.org?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = "mailto:info@enehofiker.org?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
     });
   }
 })();
