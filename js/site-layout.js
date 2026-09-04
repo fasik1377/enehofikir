@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div class="bordered_1px"></div>
               <div class="col-xl-12">
                 <p class="copy_right text-center">
-                  &copy; ${new Date().getFullYear()} Enehofikir Organization | All Rights Reserved
+                  &copy; ${new Date().getFullYear()} Enehofikir Organization | All Rights Reserved | Developed by <a href="https://fasik1377.github.io/fasika-abera/" target="_blank" rel="noopener noreferrer">Fasika Abera</a>
                 </p>
               </div>
             </div>

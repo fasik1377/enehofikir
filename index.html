@@ -1286,6 +1286,15 @@
         </div>
     </div>
 </div><!-- counter_area_start -->
+<section class="impact-highlights" aria-label="Our impact highlights">
+  <div class="container">
+    <div class="impact-highlights-grid">
+      <article class="impact-highlight-card"><span class="impact-highlight-icon"><i class="fas fa-calendar-check"></i></span><strong>5</strong><span>Years of Experience</span></article>
+      <article class="impact-highlight-card"><span class="impact-highlight-icon"><i class="fas fa-heart"></i></span><strong>500+</strong><span>Happy Clients</span></article>
+      <article class="impact-highlight-card"><span class="impact-highlight-icon"><i class="fas fa-rocket"></i></span><strong>100+</strong><span>Projects Created</span></article>
+    </div>
+  </div>
+</section>
 <div class="py-5 home-counter-section">
   <div class="container counter-shell" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 50px;">
     <div class="overlay" style="background: linear-gradient(135deg, #1c9288d3, #20b2aa, #1c9288d3); border-radius: 50px;">
@@ -1355,6 +1364,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 <style>
+.impact-highlights { padding: 34px 0 20px; background: #f4fbfa; perspective: 1200px; }
+.impact-highlights-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.impact-highlight-card { min-height: 190px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: #fff; background: linear-gradient(145deg, #157066, #20b2aa); border-radius: 18px; box-shadow: 0 18px 35px rgba(21,112,102,.25), inset 0 1px rgba(255,255,255,.35); transform-style: preserve-3d; transition: transform .25s ease, box-shadow .25s ease; animation: impactFloat 5s ease-in-out infinite; }
+.impact-highlight-card:nth-child(2) { animation-delay: -1.7s; }
+.impact-highlight-card:nth-child(3) { animation-delay: -3.3s; }
+.impact-highlight-card:hover { transform: translateY(-10px) rotateX(5deg) rotateY(-5deg); box-shadow: 0 25px 45px rgba(21,112,102,.35); }
+.impact-highlight-icon { width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%; background: rgba(255,255,255,.18); font-size: 22px; transform: translateZ(24px); }
+.impact-highlight-card strong { font-size: 2.5rem; line-height: 1; transform: translateZ(18px); }
+.impact-highlight-card > span:last-child { font-size: 1rem; letter-spacing: .02em; }
+@keyframes impactFloat { 0%,100% { transform: translateY(0) rotateX(0) rotateY(0); } 50% { transform: translateY(-7px) rotateX(2deg) rotateY(-2deg); } }
+@media (max-width: 767px) { .impact-highlights-grid { grid-template-columns: 1fr; gap: 16px; } .impact-highlight-card { min-height: 160px; } }
 .single_card {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
