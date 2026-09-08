@@ -28,6 +28,14 @@
       ]
     },
     {
+      key: "school-feeding-phase-two",
+      category: "nutrition",
+      categoryLabel: "Nutrition",
+      title: "School Feeding Phase II Completion Review",
+      description: "Project partners, educators, families, caterers, and students reflect on three years of school feeding impact.",
+      files: ["school_feedingII1.jpg", "school_feedingII2.jpg"]
+    },
+    {
       key: "unity-park",
       category: "education",
       categoryLabel: "Education",
@@ -132,6 +140,14 @@
       files: ["green_legacy.jpg"]
     },
     {
+      key: "gurara-tree-planting",
+      category: "environment",
+      categoryLabel: "Environment",
+      title: "Tree Planting Campaign at Gurara",
+      description: "Founding members, staff, and merit scholarship students come together to plant trees at the Gurara site.",
+      files: ["planting_tree1.jpg", "planting_tree2.jpg"]
+    },
+    {
       key: "book-donation",
       category: "education",
       categoryLabel: "Education",
@@ -191,7 +207,9 @@
       "aviation-1",
       "health-education-1",
       "sanitary-pads-1",
-      "green-legacy-1"
+      "green-legacy-1",
+      "school-feeding-phase-two-1",
+      "gurara-tree-planting-1"
     ];
 
     const featuredItems = featuredIds
