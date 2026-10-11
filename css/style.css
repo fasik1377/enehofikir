@@ -1534,6 +1534,50 @@ h3 {
   font-size: 20px;
 }
 
+/* Language Switcher */
+.header-area .header-top_area .language_switcher {
+  margin-left: 20px;
+}
+
+.header-area .header-top_area .language_switcher .lang-btn {
+  background: transparent;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+}
+
+.header-area .header-top_area .language_switcher .lang-btn:first-child {
+  margin-left: 0;
+}
+
+.header-area .header-top_area .language_switcher .lang-btn:hover,
+.header-area .header-top_area .language_switcher .lang-btn.active {
+  background: #1c9288d3;
+  border-color: #1c9288d3;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .header-area .header-top_area .language_switcher {
+    margin-left: 0;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-area .header-top_area .language_switcher {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
 .slider_bg_1 {
   background-image: url(../img/banner/banner.jpg);
@@ -7553,6 +7597,57 @@ h6 {
 .site-shell_header .header-top_area .short_contact_list ul li a:hover i {
   color: #1c9288;
   transform: translateY(-2px);
+}
+
+/* Language Switcher - Modern Header */
+.site-shell_header .header-top_area .language_switcher {
+  flex: 0 0 auto;
+  margin-left: 16px;
+}
+
+.site-shell_header .header-top_area .language_switcher .lang-btn {
+  background: transparent;
+  border: 1px solid rgba(23, 33, 43, 0.15);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #17212b;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.site-shell_header .header-top_area .language_switcher .lang-btn:first-child {
+  margin-left: 0;
+}
+
+.site-shell_header .header-top_area .language_switcher .lang-btn:hover,
+.site-shell_header .header-top_area .language_switcher .lang-btn.active {
+  background: #1c9288;
+  border-color: #1c9288;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 767px) {
+  .site-shell_header .header-top_area .language_switcher {
+    margin-left: 0;
+    margin-top: 8px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .site-shell_header .site-topbar_inner {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-shell_header .header-top_area .language_switcher {
+    margin-left: 12px;
+  }
 }
 
 .site-shell_header .main-header-area,
